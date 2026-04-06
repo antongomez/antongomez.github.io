@@ -1,0 +1,367 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre min",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "projects": "Proxectos",
+    "other": "Persoal"
+  },
+  "footer": {
+    "copyright": "© 2024 Antón Gómez López.",
+    "backToTop": "Volver Arriba",
+    "downloadCV": "Descargar CV"
+  },
+  "home": {
+    "subtitle": "Enxeñeiro de IA · Enxeñeiro de Software · Matemático",
+    "bio": "Máster en Intelixencia Artificial · Investigador no CiTIUS. Dobre titulación en Enxeñaría Informática e Matemáticas, con experiencia investigadora en visión artificial e IA xerativa — e unha sólida base en PLN, enxeñaría de software e ciencia aplicada.",
+    "aboutBtn": "Sobre min",
+    "projectsBtn": "Ver Proxectos"
+  },
+  "about": {
+    "label": "Percorrido Persoal",
+    "titleMain": "O meu",
+    "titleHighlight": "Camiño.",
+    "s1_title": "Formación Académica",
+    "s1_p1_before": "Iniciei a miña andaina universitaria no 2018 na Universidade de Santiago de Compostela (USC), onde cursei o",
+    "s1_p1_degree": "Dobre Grao en Matemáticas e Enxeñaría Informática",
+    "s1_p1_after": ". Esta escolla non foi casual. Xa no instituto sentía unha atracción especial por enfrontarme a problemas; gustábame enfrontarme a retos que esixisen pensamento lóxico, xa fose resolvendo problemas matemáticos ou pelexando co código nos meus primeiros proxectos de Tecnoloxías da Información.",
+    "s1_p2": "Durante os primeiros anos de carreira, tiven a inmensa sorte de rodearme de compañeiros cunha profunda inquietude intelectual. Non nos conformabamos con quedarnos na superficie das materias; gozabamos profundando, entendendo o porqué das cousas. Esta inquietude potenciou a miña curiosidade e definiu a miña forma de entender a profesión: priorizar sempre o rigor analítico e a comprensión profunda dos fundamentos fronte á aplicación automática de fórmulas ou ferramentas.",
+    "s2_title": "Cara á Intelixencia Artificial",
+    "s2_p1_before": "Un momento clave na miña formación tivo lugar no 2022, cando conseguín unha bolsa de iniciación á investigación no",
+    "s2_p1_mid": ". Esta experiencia permitiume descubrir a",
+    "s2_p1_ai": "Intelixencia Artificial",
+    "s2_p1_mid2": "xusto cando os LLMs comezaban a revolucionar o sector. Lembro a fascinación que sentín ao comprobar como a miña formación en matemáticas e enxeñaría informática me permitía asimilar con rapidez e profundidade os fundamentos do",
+    "s2_p1_dl": "Deep Learning",
+    "s2_p1_after": ". Nese preciso intre, tiven claro que quería enfocar o meu futuro profesional cara a este campo.",
+    "s3_title": "Retos, código e competición",
+    "s3_p1_before": "Ao ano seguinte, en 2023, un amigo animoume a participar na edición de 2023 do",
+    "s3_p1_mid": ". Foi unha experiencia enormemente enriquecedora: traballamos en equipo, aprendemos novas tecnoloxías, desenvolvemos o noso primeiro prototipo real en tempo limitado e, para a nosa sorpresa, gañamos un dos premios! A experiencia gustounos tanto que repetimos nas edicións de 2024 e 2025, e sumámonos tamén ao",
+    "s3_p1_after": "en 2024.",
+    "s3_p2_before": "En paralelo, durante o 2023 e o 2024, participamos no concurso nacional de programación",
+    "s3_p2_after": ", chegando á fase nacional en ambas as dúas ocasións. Esta competición céntrase en resolver problemas complexos formulados en linguaxe natural, esixindo o deseño de algoritmos clásicos que respecten estritas limitacións de tempo e memoria computacional.",
+    "s3_intro": "Ambas as experiencias foron o complemento perfecto aos meus estudos:",
+    "s3_b1_label": "Ada Byron",
+    "s3_b1": "ensinounos o rigor: coñecer os algoritmos a fondo, entender as súas implicacións de rendemento e saber optimizar o código para buscar sempre a solución máis eficiente e limpa.",
+    "s3_b2_label": "Os hackathons",
+    "s3_b2": "achegáronme á realidade do desenvolvemento áxil: saber construír un prototipo funcional (MVP) en tempo limitado, xestionar os esforzos e decidir onde investir o tempo nas fases iniciais dun proxecto.",
+    "s3_closing": "Creo firmemente que estas dúas habilidades —o deseño eficiente e o desenvolvemento áxil— combínanse á perfección nun contorno de produción real. Ademais, na edición de 2025 do HackUDC quixen ir un paso máis alá e colaborei como voluntario na organización. O meu obxectivo era axudar a manter vivo un evento que considero vital para os estudantes, ao mesmo tempo que melloraba as miñas soft skills e habilidades de comunicación, traballando cóbado a cóbado cos patrocinadores para deseñar retos que fosen verdadeiramente estimulantes para os participantes.",
+    "s4_title": "Especialización e presente",
+    "s4_p1_before": "Tras graduarme no 2024, decidín consolidar a miña paixón cursando o",
+    "s4_p1_master": "Máster en Intelixencia Artificial",
+    "s4_p1_mid": "na USC. Este posgrao permitiume afianzar a base teórica do Machine Learning e mergullarme na",
+    "s4_p1_cv": "Visión por Computador",
+    "s4_p1_mid2": ", área na que desenvolvín o meu Traballo de Fin de Máster (TFM) aplicado á",
+    "s4_p1_rs": "Teledetección",
+    "s4_p1_after": ".",
+    "s4_p2": "Máis aló da teoría, o máster supuxo un salto cualitativo a nivel práctico e técnico. Adquirín soltura en todo o ciclo de vida dos modelos de Deep Learning: dende a preparación dos datos e o adestramento dende cero, ata a aplicación de técnicas de fine-tuning. Tamén gañei experiencia despregando e adestrando estes modelos en servidores remotos de alto rendemento, familiarizándome cos fluxos de traballo propios dunha contorna profesional.",
+    "s4_p3": "Actualmente, atópome levando un paso máis alá os resultados obtidos no meu TFM, inmerso na redacción dun artigo científico co obxectivo de publicalo nunha revista académica de revisión por pares."
+  },
+  "experience": {
+    "label": "Percorrido Profesional",
+    "title1": "Traxectoria",
+    "title2": "Técnica.",
+    "subtitle": "Da investigación en PLN á IA xerativa para teledetección — unha progresión a través do aprendizaxe profundo aplicado e a contribución ao código aberto.",
+    "completed": "Completado",
+    "citius": {
+      "dates": "Feb 2025 – Feb 2026",
+      "role": "Investigador en IA",
+      "org": "CiTIUS – Centro de Investigación en Tecnoloxías Intelixentes",
+      "desc": "No marco do meu TFM, redeseñei StyleGAN3 para abordar tarefas de clasificación baixo condicións de escaseza severa de datos e desequilibrio de clases, aplicado a imaxería multiespectral adquirida con dron. Estendín o discriminador da rede cunha cabeza de clasificación completamente conectada e adestrei o modelo de extremo a extremo dende cero en conxuntos de datos multidimensionais. Os resultados están sendo redactados como manuscrito para o seu envío a unha revista científica de primeiro nivel.",
+      "achievementsLabel": "Resultado Clave",
+      "achievement1": "Accuracy Media a menos de 2,5 puntos porcentuais dos modelos Vision Transformer do estado da arte.",
+      "githubBtn": "Ver en GitHub"
+    },
+    "citmaga": {
+      "dates": "Set 2023 – Dec 2023",
+      "role": "Asistente de Investigación",
+      "org": "CITMAGA – Centro Galego de Investigación e Tecnoloxía Matemática",
+      "desc": "Colaborei co grupo de investigación en clasificación estatística para deseñar e implementar soporte multiclase no paquete R de código aberto caretEnsemble, estendendo a base de código existente para integrar a investigación estatística novedosa do equipo. O traballo implicou unha estreita colaboración entre matemáticas e enxeñaría de software, traducindo modelos teóricos en funcionalidades robustas e testadas para a comunidade de código aberto.",
+      "githubBtn": "Ver en GitHub"
+    },
+    "gradiant": {
+      "dates": "Xuñ 2023 – Ago 2023",
+      "role": "Prácticas en Machine Learning",
+      "org": "Gradiant – Centro Galego de I+D en Telecomunicacións Avanzadas",
+      "desc": "Optimicei pipelines de inferencia en PLN mediante paralelismo distribuído de datos (DDP), incrementando significativamente o rendemento do sistema. Tamén avaliei e integrei frameworks de computación distribuída — incluíndo Ray e Dask — para mellorar a escalabilidade dos prototipos de investigación.",
+      "achievementsLabel": "Resultados Clave",
+      "achievement1": "Rendemento de inferencia en PLN mellorado en 2,5× mediante paralelización DDP.",
+      "achievement2": "Escalabilidade mellorada mediante a integración dos frameworks distribuídos Ray e Dask."
+    },
+    "citiusNLP": {
+      "dates": "Xul 2022 – Ago 2022",
+      "role": "Prácticas de Investigación en PLN",
+      "org": "CiTIUS – Centro de Investigación en Tecnoloxías Intelixentes",
+      "desc": "Bolsa de iniciación á investigación dun mes dentro do grupo de PLN, centrada no estudo de arquitecturas de tradución automática neuronal para escenarios de baixos recursos lingüísticos. Adestrei e avaliei un modelo de tradución galego–español con OpenNMT, alcanzando unha puntuación BLEU de 64,3%."
+    },
+    "stack": {
+      "title": "Skills",
+      "cat1": "Languages",
+      "cat2": "AI & Deep Learning",
+      "cat3": "Data & Distributed",
+      "cat4": "Frameworks",
+      "cat5": "Tools & DevOps"
+    }
+  },
+  "education": {
+    "label": "Percorrido Académico",
+    "title1": "Bases",
+    "title2": "Académicas.",
+    "subtitle": "Unha base construída sobre matemáticas e enxeñaría informática, cun máster centrado en IA e aprendizaxe profundo.",
+    "master": {
+      "degree": "Máster en Intelixencia Artificial",
+      "university": "Universidade de Santiago de Compostela",
+      "grade": "Nota Media: 9,28/10",
+      "thesisLabel": "Traballo de Fin de Máster",
+      "thesisTitle": "Adaptación de StyleGAN para o Procesamento de Imaxes de Teledetección Multidimensionais",
+      "githubBtn": "Repositorio GitHub",
+      "pdfBtn": "PDF da Tese",
+      "coursesLabel": "Materias Relevantes",
+      "courses": [
+        "Aprendizaxe Profundo",
+        "Visión por Computador",
+        "PLN",
+        "Robótica Intelixente",
+        "IA en Contornos de Big Data",
+        "Aprendizaxe Automática",
+        "Xestión de Proxectos de IA"
+      ],
+      "toolsLabel": "Ferramentas e Habilidades",
+      "tools": [
+        "PyTorch",
+        "TensorFlow",
+        "Python",
+        "OpenCV",
+        "PySpark",
+        "HPC",
+        "Docker",
+        "Git"
+      ]
+    },
+    "cs": {
+      "degree": "Grao en Enxeñaría Informática",
+      "university": "Universidade de Santiago de Compostela",
+      "grade": "Nota Media: 9,24/10",
+      "coursesLabel": "Materias Relevantes",
+      "courses": [
+        "Algoritmos e Estruturas de Datos",
+        "Arquitectura de Computadores",
+        "POO",
+        "Linguaxes Formais e Autómatas",
+        "Sistemas Intelixentes",
+        "Ciberseguridade"
+      ],
+      "toolsLabel": "Ferramentas e Habilidades",
+      "tools": [
+        "Java",
+        "C/C++",
+        "Python",
+        "JavaScript",
+        "React",
+        "Docker",
+        "Git",
+        "Linux",
+        "SQL"
+      ],
+      "thesisLabel": "Traballo de Fin de Grao",
+      "thesisTitle": "Adaptación Efectiva das GANs para Imaxes de Teledetección Multidimensionais",
+      "thesisBtn": "PDF do TFG"
+    },
+    "math": {
+      "degree": "Grao en Matemáticas",
+      "university": "Universidade de Santiago de Compostela",
+      "grade": "Nota Media: 8,94/10",
+      "coursesLabel": "Materias Relevantes",
+      "courses": [
+        "Álxebra Lineal e Multilineal",
+        "Métodos Numéricos",
+        "Topoloxía Xeral",
+        "Probabilidade e Estatística",
+        "Modelos de Regresión"
+      ],
+      "toolsLabel": "Ferramentas e Habilidades",
+      "tools": [
+        "R",
+        "MATLAB",
+        "LaTeX",
+        "Optimización Numérica",
+        "Clasificación Estatística"
+      ],
+      "thesisLabel": "Traballo de Fin de Grao",
+      "thesisTitle": "Métodos de Clasificación e Conxuntos de Clasificadores en Aprendizaxe Supervisado",
+      "thesisBtn": "PDF do TFG"
+    },
+    "awards": {
+      "title": "Premios e Recoñecementos",
+      "award1": {
+        "date": "Maio 2025",
+        "issuer": "Xunta de Galicia",
+        "title": "Premio de Fin de Estudos",
+        "desc": "Seleccionado como un dos 4 premiados entre máis de 300 estudantes de Enxeñaría Informática en Galicia por ter un dos mellores expedientes académicos da promoción 2024."
+      },
+      "award2": {
+        "date": "Nov 2024",
+        "issuer": "Universidade de Santiago de Compostela",
+        "title": "Premio á Calidade Lingüística en Galego",
+        "desc": "Mellor traballo de fin de grao de Enxeñaría Informática en galego na área de Enxeñaría e Arquitectura por excelencia na calidade lingüística na lingua galega."
+      },
+      "award3": {
+        "date": "Set 2024",
+        "issuer": "CIXUG",
+        "title": "Mellor Proxecto Universitario de Software Libre",
+        "desc": "Segundo premio entre todos os proxectos universitarios de software libre presentados en 2024 polo Consorcio Interuniversitario de Galicia, por adoptar principios de software libre no TFG."
+      }
+    },
+    "languages": {
+      "title": "Idiomas"
+    },
+    "cert": {
+      "name": "Cambridge English: C1 Advanced",
+      "issuer": "Cambridge Assessment English",
+      "desc": "Fluidez profesional demostrada para a investigación e a comunicación técnica.",
+      "overallLabel": "Puntuación",
+      "levelLabel": "Nivel",
+      "skillsLabel": "Puntuacións por Habilidade · Escala Cambridge",
+      "passThreshold": "Limiar de aprobado C1",
+      "skills": {
+        "reading": "Lectura",
+        "writing": "Escritura",
+        "useOfEnglish": "Uso do Inglés",
+        "listening": "Comprensión Oral",
+        "speaking": "Expresión Oral"
+      }
+    }
+  },
+  "projects": {
+    "label": "Portafolio Técnico",
+    "title1": "Portafolio",
+    "title2": "Técnico.",
+    "subtitle": "Algúns dos proxectos dos que estou máis orgulloso — investigación, traballo en código aberto e o mellor dos hackathons.",
+    "thesis": {
+      "tag1": "Investigación",
+      "tag2": "GANs",
+      "title": "TFM: Adaptación de StyleGAN3",
+      "desc": "Unha arquitectura StyleGAN3 unificada que sintetiza imaxes multiespectrais e clasifícaas simultaneamente, abordando a escaseza de datos e o desequilibrio de clases en teledetección.",
+      "githubBtn": "GITHUB",
+      "pdfBtn": "PDF"
+    },
+    "caret": {
+      "tag": "Código Aberto",
+      "title": "caretEnsemble",
+      "desc": "Estendín o paquete R caretEnsemble con soporte para clasificación multiclase, ampliando os seus métodos de ensemble máis alá de resultados binarios.",
+      "tag1": "R",
+      "tag2": "Aprendizaxe Automático",
+      "viewBtn": "GitHub"
+    },
+    "alvaro": {
+      "title": "alvaroleonnutricion",
+      "desc": "Web profesional para un nutricionista, desenvolvida mentres aprendía React desde cero. Engadín soporte multilingüe con i18n e estruturei a interface con Bootstrap."
+    },
+    "hackudc1": {
+      "label": "HackUDC · 2023",
+      "title": "Costa Compas",
+      "desc": "Sistema de recomendación de praias que suxire as mellores opcións segundo as actividades do usuario e as condicións meteorolóxicas, considerando temperatura, vento e nubosidade.",
+      "devpostBtn": "Devpost",
+      "githubBtn": "GitHub"
+    },
+    "hackudc2": {
+      "label": "HackUDC · 2024",
+      "title": "Ecoviaggio",
+      "desc": "Aplicación web para reducir a pegada de carbono ao viaxar, usando clustering e o algoritmo de Dijkstra para planificar rutas óptimas de baixa emisión.",
+      "devpostBtn": "Devpost",
+      "githubBtn": "GitHub"
+    },
+    "hackupc": {
+      "label": "HackUPC · 2024",
+      "title": "OpenSplit",
+      "desc": "Bot de Telegram para xestionar gastos en grupo e minimizar transferencias ao saldar contas, cunha interface web complementaria.",
+      "devpostBtn": "Devpost",
+      "githubBtn": "GitHub"
+    },
+    "hackudc3": {
+      "label": "HackUDC · 2025",
+      "title": "Wearvana",
+      "desc": "Rede social centrada na moda para compartir outfits e recibir recomendacións de conxuntos impulsadas por IA usando a API de Inditex Tech.",
+      "devpostBtn": "Devpost",
+      "githubBtn": "GitHub"
+    },
+    "ada": {
+      "rankLabel": "Clasificación Nacional Acadada",
+      "title": "Competición de Programación Ada Byron",
+      "desc": "Programación competitiva en formato ICPC — 5 horas, ~12 problemas, equipo de tres. Clasificados para a fase nacional nas edicións de 2023 e 2024.",
+      "solutionsNote": "Tes curiosidade polo tipo de problemas ou como os afrontamos?",
+      "solutionsBtn": "Solucións · Edición 2023",
+      "editions": [
+        {
+          "year": "2024",
+          "label": "Clasificacións Nacionais",
+          "team": "AbuelosDG",
+          "position": "11/42",
+          "url": "https://ada-byron.es/2024/nac/resultado.php"
+        },
+        {
+          "year": "2023",
+          "label": "Clasificacións Nacionais",
+          "team": "Costa Compás",
+          "position": "13/34",
+          "url": "https://ada-byron.es/2023/nac/resultado.php",
+          "solutionsUrl": "https://github.com/sergio-alv-per/adabyron-2023"
+        }
+      ]
+    },
+    "photos": {
+      "label": "No Terreo",
+      "title": "Entre Bastidores",
+      "captions": [
+        "Ada Byron '23 · posto 13",
+        "Ada Byron '24 · no medio da batalla",
+        "Ada Byron '24 · posto 11",
+        "HackUDC '24 · 150+ participantes",
+        "HackUDC '24 · entrega de premios",
+        "HackUDC '24 · 1º posto",
+        "HackUDC '24 · ceremonia de peche",
+        "HackUDC '25 · demo de Wearvana",
+        "HackUDC '25 · 2º posto"
+      ]
+    }
+  },
+  "other": {
+    "label": "Outside The Lab",
+    "titleMain": "As miñas",
+    "titleHighlight": "Paixóns.",
+    "subtitle": "Unha ollada ao estilo de vida detrás dos algoritmos. Desde a precisión da interpretación musical ata a enerxía colaborativa dos hackathons e o rigor físico da pista.",
+    "locationLabel": "Actualmente",
+    "location": "Santiago de Compostela, ES",
+    "volunteering": {
+      "title": "Voluntariado",
+      "hackudcTitle": "HackUDC 2026",
+      "hackudcRole": "Organizador e Responsable de Retos",
+      "hackudcBadge": "Próximamente",
+      "hackudcDesc": "Dirixindo a orquestración técnica do principal hackathon do norte de España. Coordinando con grandes patrocinadores para deseñar retos rigorosos que amplíen os límites da innovación universitaria.",
+      "mentorTitle": "Mentor Comunitario",
+      "mentorDesc": "Apoiando obradoiros STEM locais para estudantes de secundaria, fomentando unha nova xeración de pensadores técnicos.",
+      "ossTitle": "Colaborador de Código Aberto",
+      "ossDesc": "Mantemento de funcionalidades de accesibilidade para plataformas educativas rexionais e ferramentas colaborativas."
+    },
+    "music": {
+      "title": "A Orquestración",
+      "instrument": "Solista de Clarinete",
+      "desc": "Estudos musicais de grao medio rematados en 2018. Actualmente refinando a complexa interacción dos instrumentos de vento madeira no contexto sinfónico da Sementeira. A música proporciona a disciplina rítmica necesaria para a arquitectura técnica de alto nivel.",
+      "tags": ["Interpretación", "Teoría", "Vento Madeira"]
+    },
+    "sports": {
+      "title": "Rigor Físico",
+      "basketballTitle": "Baloncesto Competitivo",
+      "basketballLeague": "Liga de Educación Secundaria",
+      "basketballDesc": "Anos formativos na pista, desenvolvendo conciencia espacial e a toma de decisións rápida necesaria para a dinámica de equipo de alta velocidade.",
+      "athleticsTitle": "Práctica de Atletismo",
+      "athleticsDiscipline": "Disciplina Actual",
+      "athleticsDesc": "Centrándose na velocidade explosiva e a resistencia. Un ritual diario para liberar a carga cognitiva e manter o rendemento operacional óptimo."
+    },
+    "quote1": "A mesma precisión que uso para depurar un sistema complexo é a que aplico nun",
+    "quoteMusic": "ensaio musical",
+    "quote2": "ou nun",
+    "quoteSports": "sprint na pista.",
+    "quoteAuthor": "— Unha filosofía de excelencia holística."
+  }
+}

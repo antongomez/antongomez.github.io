@@ -1,0 +1,367 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "other": "Personal"
+  },
+  "footer": {
+    "copyright": "© 2024 Antón Gómez López.",
+    "backToTop": "Back to Top",
+    "downloadCV": "Download CV"
+  },
+  "home": {
+    "subtitle": "AI Engineer · Software Engineer · Mathematician",
+    "bio": "MSc in Artificial Intelligence · Researcher at CiTIUS. Dual degree in Computer Engineering & Mathematics, with research experience in computer vision and generative AI — and a solid foundation in NLP, software engineering, and applied science.",
+    "aboutBtn": "About Me",
+    "projectsBtn": "View Projects"
+  },
+  "about": {
+    "label": "Personal Journey",
+    "titleMain": "My",
+    "titleHighlight": "Path.",
+    "s1_title": "Academic Background",
+    "s1_p1_before": "I began my university journey in 2018 at the University of Santiago de Compostela (USC), where I pursued a",
+    "s1_p1_degree": "Double Degree in Mathematics and Computer Engineering",
+    "s1_p1_after": ". This choice was no coincidence. Even in secondary school I felt a special pull toward problem-solving — I enjoyed facing challenges that demanded logical thinking, whether working through maths problems or wrestling with code in my first IT projects.",
+    "s1_p2": "During the first years of my degree, I was fortunate enough to be surrounded by peers with a deep intellectual curiosity. We weren't satisfied with just scratching the surface of our subjects; we truly enjoyed digging deeper to understand the logic behind everything. This environment fueled my own curiosity and shaped how I view the profession: always prioritizing analytical rigor and a profound understanding of the fundamentals over the rote application of formulas or tools.",
+    "s2_title": "Into Artificial Intelligence",
+    "s2_p1_before": "A pivotal moment in my training came in 2022, when I secured a research initiation grant at",
+    "s2_p1_mid": ". This experience allowed me to discover",
+    "s2_p1_ai": "Artificial Intelligence",
+    "s2_p1_mid2": "just as LLMs were beginning to revolutionise the field. I remember the fascination I felt upon realising how my background in mathematics and computer engineering let me grasp the foundations of",
+    "s2_p1_dl": "Deep Learning",
+    "s2_p1_after": "quickly and deeply. In that very moment, I knew I wanted to direct my professional future toward this field.",
+    "s3_title": "Challenges, Code and Competition",
+    "s3_p1_before": "The following year, in 2023, a friend encouraged me to take part in the 2023 edition of",
+    "s3_p1_mid": ". It was an enormously enriching experience: we worked as a team, learned new technologies, built our first real prototype under time pressure — and, to our surprise, won one of the prizes! We enjoyed it so much that we returned for the 2024 and 2025 editions, and also joined",
+    "s3_p1_after": "in 2024.",
+    "s3_p2_before": "In parallel, during 2023 and 2024, we took part in the",
+    "s3_p2_after": "national programming contest, reaching the national stage on both occasions. This competition focuses on solving complex problems formulated in natural language, requiring the design of classical algorithms that respect strict time and memory constraints.",
+    "s3_intro": "Both experiences were the perfect complement to my studies:",
+    "s3_b1_label": "Ada Byron",
+    "s3_b1": "taught us rigour: knowing algorithms in depth, understanding their performance implications, and knowing how to optimise code to always seek the most efficient and clean solution.",
+    "s3_b2_label": "Hackathons",
+    "s3_b2": "brought me closer to the reality of agile development: knowing how to build a functional prototype (MVP) in limited time, managing effort and deciding where to invest time in the early stages of a project.",
+    "s3_closing": "I firmly believe these two skills — efficient design and agile development — complement each other perfectly in a real production environment. Furthermore, in the 2025 edition of HackUDC I wanted to go a step further and volunteered as part of the organising team. My goal was to help keep alive an event I consider vital for students, while also improving my soft skills and communication abilities, working side by side with sponsors to design challenges that would be truly stimulating for participants.",
+    "s4_title": "Specialisation and the Present",
+    "s4_p1_before": "After graduating in 2024, I decided to consolidate my passion by pursuing the",
+    "s4_p1_master": "Master's in Artificial Intelligence",
+    "s4_p1_mid": "at USC. This postgraduate programme allowed me to solidify the theoretical foundations of Machine Learning and immerse myself fully in",
+    "s4_p1_cv": "Computer Vision",
+    "s4_p1_mid2": ", the area in which I developed my Master's Thesis applied to",
+    "s4_p1_rs": "Remote Sensing",
+    "s4_p1_after": ".",
+    "s4_p2": "Beyond theory, the Master's represented a qualitative leap at a practical and technical level. I gained confidence across the full lifecycle of Deep Learning models: from data preparation and training from scratch, to applying fine-tuning techniques. I also gained experience deploying and training these models on high-performance remote servers, becoming familiar with the workflows of a professional environment.",
+    "s4_p3": "I am currently taking the results of my thesis a step further, immersed in writing a scientific paper with the goal of publishing it in a peer-reviewed academic journal."
+  },
+  "experience": {
+    "label": "Professional Journey",
+    "title1": "The Technical",
+    "title2": "Trajectory.",
+    "subtitle": "From NLP research to generative AI for remote sensing — a progression through applied deep learning and open-source contribution.",
+    "completed": "Completed",
+    "citius": {
+      "dates": "Feb 2025 – Feb 2026",
+      "role": "AI Research Scholar",
+      "org": "CiTIUS – Research Center in Intelligent Technologies",
+      "desc": "As part of my Master's thesis research, I redesigned StyleGAN3 to tackle classification tasks under conditions of severe data scarcity and class imbalance, applied to drone-acquired multispectral imagery. I extended the network discriminator with a fully connected classification head and trained the model end-to-end from scratch on multidimensional datasets. The results are currently being written up as a manuscript for submission to a top-tier peer-reviewed journal.",
+      "achievementsLabel": "Key Result",
+      "achievement1": "Achieved Average Accuracy within 2.5 percentage points of state-of-the-art Vision Transformer models.",
+      "githubBtn": "View on GitHub"
+    },
+    "citmaga": {
+      "dates": "Sep 2023 – Dec 2023",
+      "role": "Research Assistant",
+      "org": "CITMAGA – Galician Centre for Mathematical Research and Technology",
+      "desc": "Collaborated with the statistical classification research group to design and implement multiclass support for the open-source caretEnsemble R package, extending the existing codebase to integrate the team's novel statistical research. The work involved close collaboration between mathematics and software engineering, translating theoretical models into robust, tested features for the open-source community.",
+      "githubBtn": "View on GitHub"
+    },
+    "gradiant": {
+      "dates": "Jun 2023 – Aug 2023",
+      "role": "Machine Learning Intern",
+      "org": "Gradiant – Galician R&D Center in Advanced Telecommunications",
+      "desc": "Optimized NLP inference pipelines through distributed data parallelism (DDP), significantly boosting system throughput. Also benchmarked and integrated distributed computing frameworks — including Ray and Dask — to improve the scalability of research prototypes.",
+      "achievementsLabel": "Key Results",
+      "achievement1": "Boosted NLP inference performance by 2.5× through DDP parallelization.",
+      "achievement2": "Improved system scalability by integrating Ray and Dask distributed frameworks."
+    },
+    "citiusNLP": {
+      "dates": "Jul 2022 – Aug 2022",
+      "role": "NLP Research Intern",
+      "org": "CiTIUS – Research Center in Intelligent Technologies",
+      "desc": "A one-month research initiation scholarship within the NLP group, focused on studying neural machine translation architectures for low-resource language scenarios. Trained and evaluated a Galician–Spanish translation model using OpenNMT, achieving a BLEU score of 64.3%."
+    },
+    "stack": {
+      "title": "Skills",
+      "cat1": "Languages",
+      "cat2": "AI & Deep Learning",
+      "cat3": "Data & Distributed",
+      "cat4": "Frameworks",
+      "cat5": "Tools & DevOps"
+    }
+  },
+  "education": {
+    "label": "Academic Journey",
+    "title1": "Academic",
+    "title2": "Foundations.",
+    "subtitle": "A background built on mathematics and computer science, with a Master's focused on AI and deep learning.",
+    "master": {
+      "degree": "Master's Degree in Artificial Intelligence",
+      "university": "University of Santiago de Compostela",
+      "grade": "Avg Grade: 9.28/10",
+      "thesisLabel": "Master's Thesis",
+      "thesisTitle": "Adaptation of StyleGAN for Processing Multidimensional Remote Sensing Images",
+      "githubBtn": "GitHub Repo",
+      "pdfBtn": "Thesis PDF",
+      "coursesLabel": "Relevant Courses",
+      "courses": [
+        "Deep Learning",
+        "Computer Vision",
+        "NLP",
+        "Intelligent Robotics",
+        "AI in Big Data Environments",
+        "Machine Learning",
+        "AI Project Management"
+      ],
+      "toolsLabel": "Tools & Skills",
+      "tools": [
+        "PyTorch",
+        "TensorFlow",
+        "Python",
+        "OpenCV",
+        "PySpark",
+        "HPC",
+        "Docker",
+        "Git"
+      ]
+    },
+    "cs": {
+      "degree": "Bachelor's Degree in Computer Engineering",
+      "university": "University of Santiago de Compostela",
+      "grade": "Avg Grade: 9.24/10",
+      "coursesLabel": "Relevant Courses",
+      "courses": [
+        "Algorithms & Data Structures",
+        "Computer Architecture",
+        "OOP",
+        "Formal Languages & Automata",
+        "Intelligent Systems",
+        "Cybersecurity"
+      ],
+      "toolsLabel": "Tools & Skills",
+      "tools": [
+        "Java",
+        "C/C++",
+        "Python",
+        "JavaScript",
+        "React",
+        "Docker",
+        "Git",
+        "Linux",
+        "SQL"
+      ],
+      "thesisLabel": "Bachelor's Thesis",
+      "thesisTitle": "Effective Adaptation of GANs for Multidimensional Remote Sensing Images",
+      "thesisBtn": "Thesis PDF"
+    },
+    "math": {
+      "degree": "Bachelor's Degree in Mathematics",
+      "university": "University of Santiago de Compostela",
+      "grade": "Avg Grade: 8.94/10",
+      "coursesLabel": "Relevant Courses",
+      "courses": [
+        "Linear & Multilinear Algebra",
+        "Numerical Methods",
+        "General Topology",
+        "Probability & Statistics",
+        "Regression Models"
+      ],
+      "toolsLabel": "Tools & Skills",
+      "tools": [
+        "R",
+        "MATLAB",
+        "LaTeX",
+        "Numerical Optimization",
+        "Statistical Classification"
+      ],
+      "thesisLabel": "Bachelor's Thesis",
+      "thesisTitle": "Classification Methods and Classifier Ensembles in Supervised Learning",
+      "thesisBtn": "Thesis PDF"
+    },
+    "awards": {
+      "title": "Honors & Awards",
+      "award1": {
+        "date": "May 2025",
+        "issuer": "Government of Galicia",
+        "title": "End-of-Degree Award",
+        "desc": "Selected as one of 4 recipients among over 300 Computer Engineering students in Galicia for having one of the top academic records in the 2024 graduating cohort."
+      },
+      "award2": {
+        "date": "Nov 2024",
+        "issuer": "University of Santiago de Compostela",
+        "title": "Award for Linguistic Quality in Galician",
+        "desc": "Best Computer Engineering bachelor's thesis in Galician in the Engineering and Architecture area for excellence in linguistic quality in the Galician language."
+      },
+      "award3": {
+        "date": "Sep 2024",
+        "issuer": "CIXUG",
+        "title": "Best Free Software University Project",
+        "desc": "Second prize among all free software university projects submitted in 2024 by the Interuniversity Consortium of Galicia, for adopting free software principles in the bachelor's thesis."
+      }
+    },
+    "languages": {
+      "title": "Languages"
+    },
+    "cert": {
+      "name": "Cambridge English: C1 Advanced",
+      "issuer": "Cambridge Assessment English",
+      "desc": "Demonstrated professional fluency for research and technical communication.",
+      "overallLabel": "Overall",
+      "levelLabel": "Level",
+      "skillsLabel": "Skill Scores · Cambridge English Scale",
+      "passThreshold": "C1 pass threshold",
+      "skills": {
+        "reading": "Reading",
+        "writing": "Writing",
+        "useOfEnglish": "Use of English",
+        "listening": "Listening",
+        "speaking": "Speaking"
+      }
+    }
+  },
+  "projects": {
+    "label": "Technical Portfolio",
+    "title1": "Technical",
+    "title2": "Projects.",
+    "subtitle": "Some of the projects I'm most proud of — research, open-source work, and hackathon highlights.",
+    "thesis": {
+      "tag1": "Research",
+      "tag2": "GANs",
+      "title": "Master's Thesis: StyleGAN3 Adaptation",
+      "desc": "A unified StyleGAN3 architecture that synthesizes multispectral imagery and classifies it simultaneously, tackling data scarcity and class imbalance in remote sensing.",
+      "githubBtn": "GITHUB",
+      "pdfBtn": "PDF"
+    },
+    "caret": {
+      "tag": "Open Source",
+      "title": "caretEnsemble",
+      "desc": "Extended the caretEnsemble R package with multiclass classification support, broadening its ensemble methods beyond binary outcomes.",
+      "tag1": "R",
+      "tag2": "Machine Learning",
+      "viewBtn": "GitHub"
+    },
+    "alvaro": {
+      "title": "alvaroleonnutricion",
+      "desc": "A nutritionist's professional site, built while learning React from scratch. Added multilingual support with i18n and structured the UI with Bootstrap."
+    },
+    "hackudc1": {
+      "label": "HackUDC · 2023",
+      "title": "Costa Compas",
+      "desc": "Beach recommendation system that suggests the best beaches based on user activities and weather conditions, factoring in temperature, wind, and cloud cover.",
+      "devpostBtn": "Devpost",
+      "githubBtn": "GitHub"
+    },
+    "hackudc2": {
+      "label": "HackUDC · 2024",
+      "title": "Ecoviaggio",
+      "desc": "Web app for reducing carbon footprint while traveling, using clustering and Dijkstra's algorithm for optimal low-emission route planning.",
+      "devpostBtn": "Devpost",
+      "githubBtn": "GitHub"
+    },
+    "hackupc": {
+      "label": "HackUPC · 2024",
+      "title": "OpenSplit",
+      "desc": "Telegram bot for managing group expenses and minimizing transfers when balancing accounts, with an accompanying web interface.",
+      "devpostBtn": "Devpost",
+      "githubBtn": "GitHub"
+    },
+    "hackudc3": {
+      "label": "HackUDC · 2025",
+      "title": "Wearvana",
+      "desc": "Fashion-focused social network for sharing outfits and getting AI-powered outfit recommendations using Inditex Tech's API.",
+      "devpostBtn": "Devpost",
+      "githubBtn": "GitHub"
+    },
+    "ada": {
+      "rankLabel": "National Ranking Achieved",
+      "title": "Ada Byron Programming Competition",
+      "desc": "Competitive programming in ICPC format — 5 hours, ~12 problems, team of three. Qualified for the national phase in the 2023 and 2024 editions.",
+      "solutionsNote": "Curious about the type of problems or how we approached them?",
+      "solutionsBtn": "Solutions · 2023 Edition",
+      "editions": [
+        {
+          "year": "2024",
+          "label": "National Rankings",
+          "team": "AbuelosDG",
+          "position": "11/42",
+          "url": "https://ada-byron.es/2024/nac/resultado.php"
+        },
+        {
+          "year": "2023",
+          "label": "National Rankings",
+          "team": "Costa Compás",
+          "position": "13/34",
+          "url": "https://ada-byron.es/2023/nac/resultado.php",
+          "solutionsUrl": "https://github.com/sergio-alv-per/adabyron-2023"
+        }
+      ]
+    },
+    "photos": {
+      "label": "In The Field",
+      "title": "Behind the Scenes",
+      "captions": [
+        "Ada Byron '23 · ranked 13th",
+        "Ada Byron '24 · deep in it",
+        "Ada Byron '24 · ranked 11th",
+        "HackUDC '24 · 150+ hackers",
+        "HackUDC '24 · awards ceremony",
+        "HackUDC '24 · 1st place",
+        "HackUDC '24 · closing ceremony",
+        "HackUDC '25 · Wearvana demo",
+        "HackUDC '25 · 2nd place"
+      ]
+    }
+  },
+  "other": {
+    "label": "Outside The Lab",
+    "titleMain": "My",
+    "titleHighlight": "Passions.",
+    "subtitle": "A curated glimpse into the life behind the algorithms. From the precision of musical performance to the collaborative energy of hackathons and the physical rigor of the track.",
+    "locationLabel": "Currently",
+    "location": "Santiago de Compostela, ES",
+    "volunteering": {
+      "title": "Volunteering",
+      "hackudcTitle": "HackUDC 2026",
+      "hackudcRole": "Organizer & Challenge Track Lead",
+      "hackudcBadge": "Upcoming",
+      "hackudcDesc": "Leading the technical orchestration of Northern Spain's premier hackathon. Coordinating with major sponsors to design rigorous challenge tracks that push the boundaries of undergraduate innovation.",
+      "mentorTitle": "Community Mentor",
+      "mentorDesc": "Supporting local STEM workshops for secondary students, fostering a new generation of technical thinkers.",
+      "ossTitle": "Open Source Contributor",
+      "ossDesc": "Maintaining accessibility features for regional educational platforms and collaborative tools."
+    },
+    "music": {
+      "title": "The Orchestration",
+      "instrument": "Clarinet Soloist",
+      "desc": "Intermediate music studies concluded in 2018. Currently refining the complex interplay of woodwinds within the Sementeira symphonic context. Music provides the rhythmic discipline necessary for high-stakes technical architecture.",
+      "tags": ["Performance", "Theory", "Woodwind"]
+    },
+    "sports": {
+      "title": "Physical Rigor",
+      "basketballTitle": "Competitive Basketball",
+      "basketballLeague": "Secondary School League",
+      "basketballDesc": "Formative years spent on the court, developing spatial awareness and the rapid decision-making required for high-velocity team dynamics.",
+      "athleticsTitle": "Athletics Practice",
+      "athleticsDiscipline": "Current Discipline",
+      "athleticsDesc": "Focusing on explosive speed and endurance. A daily ritual to clear the cognitive load and maintain peak operational performance."
+    },
+    "quote1": "The same precision I use to debug a complex system is what I bring to a",
+    "quoteMusic": "musical rehearsal",
+    "quote2": "or a",
+    "quoteSports": "sprint on the track.",
+    "quoteAuthor": "— A philosophy of holistic excellence."
+  }
+}

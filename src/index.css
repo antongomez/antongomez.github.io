@@ -1,0 +1,391 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ─── Runtime palette variables ──────────────────────────────────────────── */
+
+/* Light theme (default) */
+:root {
+  --p-background:                 #f4f6ff;
+  --p-surface:                    #f4f6ff;
+  --p-surface-dim:                #eceefd;
+  --p-surface-bright:             #ffffff;
+  --p-surface-container-lowest:   #ffffff;
+  --p-surface-container-low:      #eceefb;
+  --p-surface-container:          #e5e7f5;
+  --p-surface-container-high:     #dfe1ef;
+  --p-surface-container-highest:  #d8daea;
+  --p-surface-variant:            #e0e2f0;
+  --p-surface-tint:               #4f46e5;
+  --p-surface-bright-val:         #ffffff;
+  --p-on-background:              #0d1740;
+  --p-on-surface:                 #0d1740;
+  --p-on-surface-variant:         #3f4f6a;
+  --p-primary:                    #4f46e5;
+  --p-primary-dim:                #6366f1;
+  --p-primary-container:          #e0e7ff;
+  --p-primary-fixed:              #e0e7ff;
+  --p-primary-fixed-dim:          #c7d2fe;
+  --p-on-primary:                 #ffffff;
+  --p-on-primary-container:       #1e1b4b;
+  --p-on-primary-fixed:           #1e1b4b;
+  --p-on-primary-fixed-variant:   #3730a3;
+  --p-inverse-primary:            #c0c1ff;
+  --p-secondary:                  #0891b2;
+  --p-secondary-dim:              #06b6d4;
+  --p-secondary-fixed:            #cffafe;
+  --p-secondary-fixed-dim:        #a5f3fc;
+  --p-secondary-container:        #cffafe;
+  --p-on-secondary:               #ffffff;
+  --p-on-secondary-container:     #164e63;
+  --p-on-secondary-fixed:         #164e63;
+  --p-on-secondary-fixed-variant: #155e75;
+  --p-tertiary:                   #1e1b4b;
+  --p-tertiary-dim:               #312e81;
+  --p-tertiary-fixed:             #e0e7ff;
+  --p-tertiary-fixed-dim:         #c7d2fe;
+  --p-tertiary-container:         #e0e7ff;
+  --p-on-tertiary:                #ffffff;
+  --p-on-tertiary-container:      #1e1b4b;
+  --p-on-tertiary-fixed:          #1e1b4b;
+  --p-on-tertiary-fixed-variant:  #312e81;
+  --p-outline:                    #8896b0;
+  --p-outline-variant:            #c8d0e4;
+  --p-error:                      #b91c1c;
+  --p-error-dim:                  #dc2626;
+  --p-error-container:            #fee2e2;
+  --p-on-error:                   #ffffff;
+  --p-on-error-container:         #7f1d1d;
+  --p-inverse-surface:            #0d1740;
+  --p-inverse-on-surface:         #f4f6ff;
+
+  --p-glass-start:    rgba(255, 255, 255, 0.65);
+  --p-glass-end:      rgba(236, 238, 251, 0.45);
+  --p-nav-bg:         rgba(244, 246, 255, 0.75);
+  --p-nav-from:       #eceefb;
+  --p-card-scrim:     rgba(5, 24, 60, 0.88);
+  --p-card-scrim-mid: rgba(5, 24, 60, 0.55);
+}
+
+/* Dark theme */
+.dark {
+  --p-background:                 #060e20;
+  --p-surface:                    #060e20;
+  --p-surface-dim:                #060e20;
+  --p-surface-bright:             #002867;
+  --p-surface-container-lowest:   #000000;
+  --p-surface-container-low:      #06122d;
+  --p-surface-container:          #05183c;
+  --p-surface-container-high:     #031d4b;
+  --p-surface-container-highest:  #00225a;
+  --p-surface-variant:            #00225a;
+  --p-surface-tint:               #c0c1ff;
+  --p-on-background:              #dee5ff;
+  --p-on-surface:                 #dee5ff;
+  --p-on-surface-variant:         #91aaeb;
+  --p-primary:                    #c0c1ff;
+  --p-primary-dim:                #b0b2ff;
+  --p-primary-container:          #2f2ebe;
+  --p-primary-fixed:              #e1e0ff;
+  --p-primary-fixed-dim:          #d1d0ff;
+  --p-on-primary:                 #2724b8;
+  --p-on-primary-container:       #ccccff;
+  --p-on-primary-fixed:           #2622b7;
+  --p-on-primary-fixed-variant:   #4647d3;
+  --p-inverse-primary:            #494bd7;
+  --p-secondary:                  #21bedc;
+  --p-secondary-dim:              #00b0cd;
+  --p-secondary-fixed:            #acedff;
+  --p-secondary-fixed-dim:        #74e3ff;
+  --p-secondary-container:        #00424e;
+  --p-on-secondary:               #00343e;
+  --p-on-secondary-container:     #41cfee;
+  --p-on-secondary-fixed:         #004653;
+  --p-on-secondary-fixed-variant: #006576;
+  --p-tertiary:                   #e3e7ff;
+  --p-tertiary-dim:               #c4cbe9;
+  --p-tertiary-fixed:             #d2d9f8;
+  --p-tertiary-fixed-dim:         #c4cbe9;
+  --p-tertiary-container:         #d2d9f8;
+  --p-on-tertiary:                #4d546e;
+  --p-on-tertiary-container:      #444c65;
+  --p-on-tertiary-fixed:          #323951;
+  --p-on-tertiary-fixed-variant:  #4e556f;
+  --p-outline:                    #5b74b1;
+  --p-outline-variant:            #2b4680;
+  --p-error:                      #ec7c8a;
+  --p-error-dim:                  #b95463;
+  --p-error-container:            #7f2737;
+  --p-on-error:                   #490013;
+  --p-on-error-container:         #ff97a3;
+  --p-inverse-surface:            #faf8ff;
+  --p-inverse-on-surface:         #4d556b;
+
+  --p-glass-start:    rgba(5, 24, 60, 0.60);
+  --p-glass-end:      rgba(3, 29, 75, 0.40);
+  --p-nav-bg:         rgba(6, 14, 32, 0.70);
+  --p-nav-from:       #06122d;
+  --p-card-scrim:     rgba(3, 10, 28, 0.88);
+  --p-card-scrim-mid: rgba(3, 10, 28, 0.55);
+}
+
+/* ─── Wire Tailwind utilities to runtime variables ──────────────────────── */
+
+@theme inline {
+  --color-background:                 var(--p-background);
+  --color-surface:                    var(--p-surface);
+  --color-surface-dim:                var(--p-surface-dim);
+  --color-surface-bright:             var(--p-surface-bright);
+  --color-surface-container-lowest:   var(--p-surface-container-lowest);
+  --color-surface-container-low:      var(--p-surface-container-low);
+  --color-surface-container:          var(--p-surface-container);
+  --color-surface-container-high:     var(--p-surface-container-high);
+  --color-surface-container-highest:  var(--p-surface-container-highest);
+  --color-surface-variant:            var(--p-surface-variant);
+  --color-surface-tint:               var(--p-surface-tint);
+  --color-on-background:              var(--p-on-background);
+  --color-on-surface:                 var(--p-on-surface);
+  --color-on-surface-variant:         var(--p-on-surface-variant);
+  --color-primary:                    var(--p-primary);
+  --color-primary-dim:                var(--p-primary-dim);
+  --color-primary-container:          var(--p-primary-container);
+  --color-primary-fixed:              var(--p-primary-fixed);
+  --color-primary-fixed-dim:          var(--p-primary-fixed-dim);
+  --color-on-primary:                 var(--p-on-primary);
+  --color-on-primary-container:       var(--p-on-primary-container);
+  --color-on-primary-fixed:           var(--p-on-primary-fixed);
+  --color-on-primary-fixed-variant:   var(--p-on-primary-fixed-variant);
+  --color-inverse-primary:            var(--p-inverse-primary);
+  --color-secondary:                  var(--p-secondary);
+  --color-secondary-dim:              var(--p-secondary-dim);
+  --color-secondary-fixed:            var(--p-secondary-fixed);
+  --color-secondary-fixed-dim:        var(--p-secondary-fixed-dim);
+  --color-secondary-container:        var(--p-secondary-container);
+  --color-on-secondary:               var(--p-on-secondary);
+  --color-on-secondary-container:     var(--p-on-secondary-container);
+  --color-on-secondary-fixed:         var(--p-on-secondary-fixed);
+  --color-on-secondary-fixed-variant: var(--p-on-secondary-fixed-variant);
+  --color-tertiary:                   var(--p-tertiary);
+  --color-tertiary-dim:               var(--p-tertiary-dim);
+  --color-tertiary-fixed:             var(--p-tertiary-fixed);
+  --color-tertiary-fixed-dim:         var(--p-tertiary-fixed-dim);
+  --color-tertiary-container:         var(--p-tertiary-container);
+  --color-on-tertiary:                var(--p-on-tertiary);
+  --color-on-tertiary-container:      var(--p-on-tertiary-container);
+  --color-on-tertiary-fixed:          var(--p-on-tertiary-fixed);
+  --color-on-tertiary-fixed-variant:  var(--p-on-tertiary-fixed-variant);
+  --color-outline:                    var(--p-outline);
+  --color-outline-variant:            var(--p-outline-variant);
+  --color-error:                      var(--p-error);
+  --color-error-dim:                  var(--p-error-dim);
+  --color-error-container:            var(--p-error-container);
+  --color-on-error:                   var(--p-on-error);
+  --color-on-error-container:         var(--p-on-error-container);
+  --color-inverse-surface:            var(--p-inverse-surface);
+  --color-inverse-on-surface:         var(--p-inverse-on-surface);
+
+  /* Fonts */
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body:     "Inter", sans-serif;
+  --font-label:    "Manrope", sans-serif;
+
+  /* Border radius */
+  --radius:      0.25rem;
+  --radius-lg:   0.5rem;
+  --radius-xl:   0.75rem;
+  --radius-full: 9999px;
+}
+
+/* ─── Scroll & mount animations ─────────────────────────────────────────── */
+
+@keyframes exp-fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.anim-fade-up {
+  animation: exp-fade-up 420ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1),
+              transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-animate-card] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 550ms cubic-bezier(0.23, 1, 0.32, 1),
+              transform 550ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition-delay: 80ms;
+}
+
+[data-animate-card].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up {
+    animation: none;
+  }
+  [data-animate] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  [data-animate-card] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ─── Card hover reveal ──────────────────────────────────────────────────── */
+
+@media (hover: hover) and (pointer: fine) {
+  /* Image: scale and dim separately so scale resolves faster than opacity */
+  .card-img {
+    opacity: 0.85;
+    transform: scale(1);
+    transition: opacity 700ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .group:hover .card-img {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+
+  /* Title lifts up as description appears */
+  .card-title {
+    transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .group:hover .card-title {
+    transform: translateY(-8px);
+    transition: transform 420ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  /* Description: grid-rows trick — collapses to zero height without layout jank */
+  .card-desc-wrap {
+    display: grid;
+    grid-template-rows: 0fr;
+    margin-bottom: 0;
+    transition: grid-template-rows 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                margin-bottom 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .card-desc-wrap > * {
+    overflow: hidden;
+    min-height: 0;
+    opacity: 0;
+    transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .group:hover .card-desc-wrap {
+    grid-template-rows: 1fr;
+    margin-bottom: 1.5rem;
+    transition: grid-template-rows 420ms cubic-bezier(0.23, 1, 0.32, 1),
+                margin-bottom 420ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .group:hover .card-desc-wrap > * {
+    opacity: 1;
+    transition: opacity 380ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-img { transition: opacity 300ms; }
+    .card-title { transform: none; transition: none; }
+    .card-desc-wrap { grid-template-rows: 1fr; margin-bottom: 1.5rem; transition: none; }
+    .card-desc-wrap > * { opacity: 1; transition: none; }
+  }
+}
+
+/* ─── Global styles ─────────────────────────────────────────────────────── */
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-card {
+  background: linear-gradient(135deg, var(--p-glass-start) 0%, var(--p-glass-end) 100%);
+  backdrop-filter: blur(12px);
+}
+
+.dark .icon-white-bg {
+  background-color: white;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--p-background);
+  color: var(--p-on-background);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+/* ─── Scrollbar hide ───────────────────────────────────────────────────────── */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── Photo grid hover ────────────────────────────────────────────────────── */
+.photo-scrim {
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.35) 45%, transparent 75%);
+}
+
+.photo-caption {
+  /* touch fallback: always shown, subtle */
+  opacity: 0.8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .photo-item img {
+    transition: transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .photo-item:hover img {
+    transform: scale(1.07);
+  }
+
+  /* scrim hidden at rest, fades in with caption */
+  .photo-scrim {
+    opacity: 0;
+    transition: opacity 280ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .photo-item:hover .photo-scrim {
+    opacity: 1;
+  }
+
+  /* caption: slide up + fade on hover */
+  .photo-caption {
+    opacity: 0;
+    transform: translateY(6px);
+    transition:
+      opacity 200ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .photo-item:hover .photo-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-caption {
+    transform: none !important;
+    transition: opacity 150ms ease !important;
+  }
+}
