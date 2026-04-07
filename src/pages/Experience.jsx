@@ -96,9 +96,9 @@ export default function Experience() {
               <div className="glass-card rounded-xl p-8 md:p-12 border border-outline-variant/20 relative overflow-hidden group">
                 <div className="absolute -top-24 -right-24 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-secondary/20 transition-all duration-700" />
                 <div className="relative z-10 space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="h-14 w-28 shrink-0 flex items-center dark:bg-white/90 rounded-lg px-3">
-                      <img src={import.meta.env.BASE_URL + 'positivo_logotipo_citius.png'} alt="CiTIUS" className="h-10 w-auto object-contain" />
+                  <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
+                    <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center dark:bg-white/90 rounded-lg px-3 self-center md:self-auto">
+                      <img src={import.meta.env.BASE_URL + 'positivo_logotipo_citius.png'} alt="CiTIUS" className="max-h-11 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.citius.role')}</h2>
@@ -171,9 +171,9 @@ export default function Experience() {
               <div className="glass-card rounded-xl p-8 md:p-12 border border-outline-variant/20 relative overflow-hidden group">
                 <div className="absolute -top-24 -right-24 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-secondary/20 transition-all duration-700" />
                 <div className="relative z-10 space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="h-14 w-28 shrink-0 flex items-center dark:bg-white/90 rounded-lg px-3">
-                      <img src={import.meta.env.BASE_URL + 'citcolor.png'} alt="CITMAGA" className="h-10 w-auto object-contain" />
+                  <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
+                    <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center dark:bg-white/90 rounded-lg px-3 self-center md:self-auto">
+                      <img src={import.meta.env.BASE_URL + 'citcolor.png'} alt="CITMAGA" className="max-h-11 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.citmaga.role')}</h2>
@@ -237,9 +237,9 @@ export default function Experience() {
               <div className="glass-card rounded-xl p-8 md:p-12 border border-outline-variant/20 relative overflow-hidden group">
                 <div className="absolute -top-24 -right-24 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-secondary/20 transition-all duration-700" />
                 <div className="relative z-10 space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="h-14 w-28 shrink-0 flex items-center dark:bg-white/90 rounded-lg px-3">
-                      <img src={import.meta.env.BASE_URL + 'Logotipo-Gradiant_V3.png'} alt="Gradiant" className="h-14 w-auto object-contain" />
+                  <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
+                    <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center dark:bg-white/90 rounded-lg px-3 self-center md:self-auto">
+                      <img src={import.meta.env.BASE_URL + 'Logotipo-Gradiant_V3.png'} alt="Gradiant" className="max-h-11 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.gradiant.role')}</h2>
@@ -305,9 +305,9 @@ export default function Experience() {
               <div className="glass-card rounded-xl p-8 md:p-12 border border-outline-variant/20 relative overflow-hidden group">
                 <div className="absolute -top-24 -right-24 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-secondary/20 transition-all duration-700" />
                 <div className="relative z-10 space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="h-14 w-28 shrink-0 flex items-center dark:bg-white/90 rounded-lg px-3">
-                      <img src={import.meta.env.BASE_URL + 'positivo_logotipo_citius.png'} alt="CiTIUS" className="h-10 w-auto object-contain" />
+                  <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
+                    <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center dark:bg-white/90 rounded-lg px-3 self-center md:self-auto">
+                      <img src={import.meta.env.BASE_URL + 'positivo_logotipo_citius.png'} alt="CiTIUS" className="max-h-11 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.citiusNLP.role')}</h2>

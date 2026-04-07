@@ -390,18 +390,44 @@ export default function Education() {
           </div>
 
           <div className="p-8 md:p-10 rounded-[2rem] glass-card border border-secondary/20 shadow-xl" data-animate-card>
-            {/* Certificate header */}
-            <div className="flex flex-col md:flex-row md:items-start gap-6 mb-8">
+            {/* Certificate header — mobile */}
+            <div className="md:hidden mb-6 space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-secondary text-2xl">verified</span>
+                </div>
+                <div>
+                  <h3 className="font-headline text-lg font-bold text-on-background leading-tight">{t('education.cert.name')}</h3>
+                  <p className="font-body text-on-surface-variant/70 text-xs mt-0.5">
+                    {t('education.cert.issuer')} · Jan 2024
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="flex-1 text-center py-3 rounded-2xl bg-secondary/10 border border-secondary/20">
+                  <span className="font-headline text-2xl font-bold text-secondary">181</span>
+                  <p className="font-label text-[10px] text-secondary/70 uppercase tracking-widest mt-1">{t('education.cert.overallLabel')}</p>
+                </div>
+                <div className="flex-1 text-center py-3 rounded-2xl bg-secondary/10 border border-secondary/20">
+                  <span className="font-headline text-2xl font-bold text-secondary">C1</span>
+                  <p className="font-label text-[10px] text-secondary/70 uppercase tracking-widest mt-1">{t('education.cert.levelLabel')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Certificate header — desktop */}
+            <div className="hidden md:flex md:flex-row md:items-start gap-6 mb-8">
               <div className="flex items-start gap-4 flex-1">
                 <div className="w-16 h-16 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-secondary text-4xl">verified</span>
                 </div>
                 <div>
                   <h3 className="font-headline text-xl font-bold text-on-background leading-tight">{t('education.cert.name')}</h3>
-                  <p className="font-body text-on-surface-variant/70 text-sm mt-0.5">{t('education.cert.issuer')}</p>
+                  <p className="font-body text-on-surface-variant/70 text-sm mt-0.5">
+                    {t('education.cert.issuer')} · Jan 2024
+                  </p>
                 </div>
               </div>
-              {/* Score badges */}
               <div className="flex gap-3 shrink-0">
                 <div className="text-center px-5 py-3 rounded-2xl bg-secondary/10 border border-secondary/20">
                   <span className="font-headline text-2xl font-bold text-secondary">181</span>
@@ -413,9 +439,6 @@ export default function Education() {
                 </div>
               </div>
             </div>
-            <span className="flex items-center gap-2 font-label text-[11px] text-on-surface-variant/80 uppercase tracking-widest -mt-4 mb-6">
-              <span className="material-symbols-outlined text-[14px]">calendar_today</span> Jan 2024
-            </span>
 
             {/* Skill bars — scale: 50–200 */}
             <div ref={barsRef}>
@@ -435,12 +458,18 @@ export default function Education() {
                   const pct = ((score - MIN) / (MAX - MIN)) * 100
                   const thresholdPct = ((C1_THRESHOLD - MIN) / (MAX - MIN)) * 100
                   return (
-                    <div key={key} className="flex items-center gap-4">
-                      <span className="font-label text-xs text-on-surface-variant w-36 shrink-0">
-                        {t(`education.cert.skills.${key}`)}
-                      </span>
+                    <div key={key} className="flex flex-col gap-1 md:flex-row md:items-center md:gap-4">
+                      {/* Mobile: label + score on one line */}
+                      <div className="flex items-baseline justify-between md:contents">
+                        <span className="font-label text-xs text-on-surface-variant md:w-36 md:shrink-0">
+                          {t(`education.cert.skills.${key}`)}
+                        </span>
+                        <span className="font-label text-xs font-bold text-secondary md:hidden">
+                          {score}
+                        </span>
+                      </div>
+                      {/* Bar */}
                       <div className="flex-1 relative py-1">
-                        {/* Bar track */}
                         <div className="h-2.5 rounded-full bg-outline-variant/20 overflow-hidden">
                           <div
                             className="h-full rounded-full bg-secondary"
@@ -456,25 +485,26 @@ export default function Education() {
                           style={{ left: `${thresholdPct}%` }}
                         />
                       </div>
-                      <span className="font-label text-xs font-bold text-secondary shrink-0 w-8 text-right">
+                      {/* Desktop score */}
+                      <span className="hidden md:block font-label text-xs font-bold text-secondary shrink-0 w-8 text-right">
                         {score}
                       </span>
                     </div>
                   )
                 })}
               </div>
-              {/* Scale legend */}
-              <div className="flex items-center gap-4 mt-3">
-                <span className="w-36 shrink-0" />
+              {/* Scale legend — desktop: aligned with bars; mobile: centred below */}
+              <div className="mt-3 md:flex md:items-center md:gap-4">
+                <span className="hidden md:block w-36 shrink-0" />
                 <div className="flex-1 relative h-5">
                   <span
-                    className="absolute -translate-x-1/2 font-label text-[9px] text-on-surface-variant/35 uppercase tracking-widest whitespace-nowrap"
+                    className="md:absolute md:-translate-x-1/2 flex justify-center md:block font-label text-[9px] text-on-surface-variant/35 uppercase tracking-widest whitespace-nowrap"
                     style={{ left: `${((180 - 50) / (200 - 50)) * 100}%` }}
                   >
                     {t('education.cert.passThreshold')} · 180
                   </span>
                 </div>
-                <span className="w-20 shrink-0" />
+                <span className="hidden md:block w-20 shrink-0" />
               </div>
             </div>
           </div>
