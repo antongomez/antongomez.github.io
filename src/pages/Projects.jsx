@@ -95,7 +95,7 @@ export default function Projects() {
                   {t("projects.thesis.githubBtn")}
                 </a>
                 <a
-                  href="/tfm.pdf"
+                  href={import.meta.env.BASE_URL + "tfm.pdf"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"

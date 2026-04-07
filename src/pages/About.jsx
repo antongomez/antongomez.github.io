@@ -61,7 +61,7 @@ export default function About() {
               </div>
             </div>
             <a
-              href="/CV_AI_Engineer.pdf"
+              href={import.meta.env.BASE_URL + "CV_AI_Engineer.pdf"}
               download
               className="glass-card group/btn flex items-center justify-center gap-3 w-full px-6 py-3 mt-4 rounded-xl border border-primary/30 text-primary hover:border-primary/60 hover:bg-primary/5 transition-all duration-300 font-label text-sm uppercase tracking-widest"
             >

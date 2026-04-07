@@ -123,7 +123,7 @@ export default function Education() {
 
               {/* Thesis book stack */}
               <div className="lg:col-span-5 flex flex-col items-center gap-8">
-                <a href="/tfm.pdf" target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center w-full transition-transform duration-300 hover:scale-105" style={{ height: '280px' }}>
+                <a href={import.meta.env.BASE_URL + "tfm.pdf"} target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center w-full transition-transform duration-300 hover:scale-105" style={{ height: '280px' }}>
                   <div
                     className="absolute rounded-xl overflow-hidden shadow-lg"
                     style={{ width: '130px', transform: 'rotate(-14deg) translateX(-55px) translateY(10px)', zIndex: 1 }}
@@ -155,7 +155,7 @@ export default function Education() {
                       <span className="material-symbols-outlined text-sm">code</span> {t('education.master.githubBtn')}
                     </a>
                     <a
-                      href="/tfm.pdf"
+                      href={import.meta.env.BASE_URL + "tfm.pdf"}
                       download
                       className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-on-primary transition-all duration-300 font-label text-xs uppercase tracking-tight"
                     >
@@ -211,7 +211,7 @@ export default function Education() {
                 </div>
               </div>
               <div className="lg:col-span-5 flex flex-col items-center gap-8">
-                <a href="/tfg_computer_engineering.pdf" target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center w-full transition-transform duration-300 hover:scale-105" style={{ height: '280px' }}>
+                <a href={import.meta.env.BASE_URL + "tfg_computer_engineering.pdf"} target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center w-full transition-transform duration-300 hover:scale-105" style={{ height: '280px' }}>
                   <div
                     className="absolute rounded-xl overflow-hidden shadow-lg"
                     style={{ width: '130px', transform: 'rotate(-14deg) translateX(-55px) translateY(10px)', zIndex: 1 }}
@@ -239,7 +239,7 @@ export default function Education() {
                     </p>
                   </div>
                   <div className="flex gap-3 flex-wrap">
-                    <a href="/tfg_computer_engineering.pdf" download className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary border border-secondary/20 hover:bg-secondary hover:text-on-secondary transition-all duration-300 font-label text-xs uppercase tracking-tight">
+                    <a href={import.meta.env.BASE_URL + "tfg_computer_engineering.pdf"} download className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary border border-secondary/20 hover:bg-secondary hover:text-on-secondary transition-all duration-300 font-label text-xs uppercase tracking-tight">
                       <span className="material-symbols-outlined text-sm">download</span> {t('education.cs.thesisBtn')}
                     </a>
                   </div>
@@ -291,7 +291,7 @@ export default function Education() {
                 </div>
               </div>
               <div className="lg:col-span-5 flex flex-col items-center gap-8">
-                <a href="/tfg_mathematics.pdf" target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center w-full transition-transform duration-300 hover:scale-105" style={{ height: '280px' }}>
+                <a href={import.meta.env.BASE_URL + "tfg_mathematics.pdf"} target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center w-full transition-transform duration-300 hover:scale-105" style={{ height: '280px' }}>
                   <div
                     className="absolute rounded-xl overflow-hidden shadow-lg"
                     style={{ width: '130px', transform: 'rotate(-14deg) translateX(-55px) translateY(10px)', zIndex: 1 }}
@@ -319,7 +319,7 @@ export default function Education() {
                     </p>
                   </div>
                   <div className="flex gap-3 flex-wrap">
-                    <a href="/tfg_mathematics.pdf" download className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-on-primary transition-all duration-300 font-label text-xs uppercase tracking-tight">
+                    <a href={import.meta.env.BASE_URL + "tfg_mathematics.pdf"} download className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-on-primary transition-all duration-300 font-label text-xs uppercase tracking-tight">
                       <span className="material-symbols-outlined text-sm">download</span> {t('education.math.thesisBtn')}
                     </a>
                   </div>
