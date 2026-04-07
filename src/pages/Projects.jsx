@@ -63,9 +63,9 @@ export default function Projects() {
         </header>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
           {/* Master's Thesis - Large Feature Card */}
-          <div className="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container border border-outline-variant/10 hover:border-primary/30 transition-all duration-500" data-animate-card>
+          <div className="md:col-span-2 lg:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container border border-outline-variant/10 hover:border-primary/30 transition-all duration-500" data-animate-card>
             <div className="absolute inset-0 z-10" style={{ background: "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)" }} />
             <img
               src="https://placehold.co/900x400/031d4b/c0c1ff?text=StyleGAN3+Neural+Network"
@@ -84,7 +84,7 @@ export default function Projects() {
               <div className="card-desc-wrap">
                 <p className="text-white/70 max-w-xl">{t("projects.thesis.desc")}</p>
               </div>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
                 <a
                   href="https://github.com/antongomez/Conditional-StyleGAN3"
                   target="_blank"
@@ -108,7 +108,7 @@ export default function Projects() {
           </div>
 
           {/* caretEnsemble */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[24rem]" data-animate-card>
+          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[24rem]" data-animate-card>
             <div className="absolute inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'code_snippet_careEnsemble.webp'}
@@ -134,7 +134,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.caret.desc")}</p>
                 </div>
-                <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center justify-between gap-3 mt-3 group-hover:mt-0">
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">
                       {t("projects.caret.tag1")}
@@ -147,7 +147,7 @@ export default function Projects() {
                     href="https://github.com/zachmayer/caretEnsemble"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest shrink-0"
+                    className="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">code</span>
                     {t("projects.caret.viewBtn")}
@@ -158,7 +158,7 @@ export default function Projects() {
           </div>
 
           {/* alvaroleonnutricion */}
-          <div className="md:col-span-5 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate-card>
+          <div className="md:col-span-1 lg:col-span-5 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate-card>
             <div className="absolute inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'home_alvaroleonnutricion.webp'}
@@ -184,15 +184,17 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.alvaro.desc")}</p>
                 </div>
-                <div className="flex flex-wrap items-center gap-3">
-                  <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">React</span>
-                  <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">UI/UX</span>
-                  <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">Deployment</span>
+                <div className="flex items-center justify-between gap-3 mt-3 group-hover:mt-0">
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">React</span>
+                    <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">UI/UX</span>
+                    <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">Deployment</span>
+                  </div>
                   <a
                     href="https://alvaroleonnutricion.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ml-auto flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest shrink-0"
+                    className="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">open_in_new</span>
                     Visit
@@ -203,7 +205,7 @@ export default function Projects() {
           </div>
 
           {/* Wearvana */}
-          <div className="md:col-span-7 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate-card>
+          <div className="md:col-span-1 lg:col-span-7 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate-card>
             <div className="absolute inset-0">
               <img src={import.meta.env.BASE_URL + 'wearvana_combined.webp'} alt="Wearvana" className="w-full h-full object-cover object-top card-img" />
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)' }} />
@@ -217,7 +219,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc3.desc")}</p>
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
                   <a
                     href="https://devpost.com/software/wearvana"
                     target="_blank"
@@ -242,7 +244,7 @@ export default function Projects() {
           </div>
 
           {/* OpenSplit */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '0ms' }}>
+          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '0ms' }}>
             <div className="absolute inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'opensplit.webp'}
@@ -268,7 +270,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackupc.desc")}</p>
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
                   <a
                     href="https://devpost.com/software/opensplitbot"
                     target="_blank"
@@ -293,7 +295,7 @@ export default function Projects() {
           </div>
 
           {/* Ecoviaggio */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '60ms' }}>
+          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '60ms' }}>
             <div className="absolute inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'ecoviaggio.webp'}
@@ -319,7 +321,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc2.desc")}</p>
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
                   <a
                     href="https://devpost.com/software/ecoviaggio"
                     target="_blank"
@@ -344,7 +346,7 @@ export default function Projects() {
           </div>
 
           {/* Costa Compas */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '120ms' }}>
+          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '120ms' }}>
             <div className="absolute inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'costacompas.webp'}
@@ -370,7 +372,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc1.desc")}</p>
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
                   <a
                     href="https://devpost.com/software/costacompas"
                     target="_blank"
@@ -395,10 +397,10 @@ export default function Projects() {
           </div>
 
           {/* Ada Byron */}
-          <div className="md:col-span-12 p-8 rounded-xl border border-outline-variant/20 hover:border-primary/30 bg-surface-container-low/60 backdrop-blur-sm mt-6 relative overflow-hidden transition-all duration-500" data-animate-card>
+          <div className="md:col-span-2 lg:col-span-12 p-8 rounded-xl border border-outline-variant/20 hover:border-primary/30 bg-surface-container-low/60 backdrop-blur-sm mt-6 relative overflow-hidden transition-all duration-500" data-animate-card>
 
             {/* Main row: description + edition cards */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
               <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-2 mb-4">
                   <span
@@ -418,7 +420,7 @@ export default function Projects() {
                   {t("projects.ada.desc")}
                 </p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 md:flex-row md:gap-12 lg:flex-col lg:gap-2">
                 {t("projects.ada.editions", { returnObjects: true }).map(
                   ({ year, label, team, position, url }) => (
                     <a
@@ -426,11 +428,13 @@ export default function Projects() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-4 pl-4 py-2 border-l-2 border-primary/40 hover:border-primary group/edition transition-all duration-300"
+                      className="flex items-center gap-4 pl-4 py-3 border-l-2 border-primary/40 hover:border-primary group/edition transition-all duration-300"
                     >
                       <span className="text-xs font-label text-on-surface-variant/50 shrink-0 w-8">{year}</span>
-                      <span className="text-sm font-bold text-on-background flex-1">{team}</span>
-                      <span className="text-xs font-label text-primary/70 shrink-0">{label} · {position}</span>
+                      <div className="min-w-0">
+                        <span className="text-sm font-bold text-on-background block">{team}</span>
+                        <span className="text-xs font-label text-primary/70">{label} · {position}</span>
+                      </div>
                       <span className="material-symbols-outlined text-primary/50 text-base shrink-0 group-hover/edition:text-primary group-hover/edition:translate-x-1 transition-all duration-300">
                         open_in_new
                       </span>
@@ -452,7 +456,7 @@ export default function Projects() {
                 href="https://github.com/sergio-alv-per/adabyron-2023"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all duration-300 font-label text-xs uppercase tracking-widest shrink-0"
+                className="inline-flex self-start sm:self-auto items-center gap-2 px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all duration-300 font-label text-xs uppercase tracking-widest shrink-0"
               >
                 <span className="material-symbols-outlined text-sm">code</span>
                 {t("projects.ada.solutionsBtn")}
@@ -472,7 +476,7 @@ export default function Projects() {
           </div>
 
           <div
-            className="grid grid-cols-2 md:grid-cols-[1.5fr_repeat(4,1fr)] md:grid-rows-[165px_165px] gap-2"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_repeat(4,1fr)] lg:grid-rows-[165px_165px] gap-2"
           >
             {[
               { src: "competition-photos/adabyron2023.webp",   alt: "Ada Byron 2023"  },
@@ -491,8 +495,8 @@ export default function Projects() {
                 style={{ transitionDelay: `${i * 60}ms` }}
                 className={`photo-item relative overflow-hidden rounded-xl ${
                   i === 0
-                    ? "col-span-2 aspect-video md:col-span-1 md:row-span-2 md:aspect-auto"
-                    : "aspect-[4/3] md:aspect-auto"
+                    ? "col-span-2 aspect-video md:col-span-1 md:aspect-[4/3] lg:row-span-2 lg:aspect-auto"
+                    : "aspect-[4/3] lg:aspect-auto"
                 }`}
               >
                 <img

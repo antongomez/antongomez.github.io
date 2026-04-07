@@ -62,8 +62,8 @@ const links = [
           Antón Gómez López
         </NavLink>
 
-        {/* Mobile: theme toggle + hamburger */}
-        <div className="flex md:hidden items-center gap-4">
+        {/* Mobile/tablet: theme toggle + hamburger */}
+        <div className="flex lg:hidden items-center gap-4">
           <button
             onClick={() => setDark(d => !d)}
             className="material-symbols-outlined text-primary hover:text-secondary transition-colors duration-300"
@@ -80,7 +80,7 @@ const links = [
           </button>
         </div>
 
-        <div className="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+        <div className="hidden lg:flex items-center gap-8 font-headline font-bold tracking-tight">
           {links.map(({ to, label }) => (
             <NavLink
               key={to}
@@ -143,7 +143,7 @@ const links = [
       {/* Mobile menu */}
       {menuOpen && (
         <div
-          className="md:hidden border-t border-outline-variant/20 px-8 py-4 flex flex-col gap-1"
+          className="lg:hidden border-t border-outline-variant/20 px-8 py-4 flex flex-col gap-1"
           style={{ background: 'var(--p-nav-bg)', backdropFilter: 'blur(12px)' }}
         >
           {links.map(({ to, label }) => (

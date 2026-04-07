@@ -51,7 +51,7 @@ export default function Experience() {
 
       <main className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
         {/* Hero */}
-        <header className="mb-24">
+        <header className="mb-16 md:mb-24">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl">
               <span className="font-label text-secondary tracking-[0.2em] text-base uppercase block mb-4 anim-fade-up" style={{ animationDelay: '0ms' }}>{t('experience.label')}</span>
@@ -62,7 +62,7 @@ export default function Experience() {
           </div>
         </header>
 
-        <section className="space-y-32">
+        <section className="space-y-16 md:space-y-32">
 
           {/* CiTIUS — AI Research Scholar */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative" data-animate-card>
@@ -331,7 +331,7 @@ export default function Experience() {
         </section>
 
         {/* Technical Stack */}
-        <section className="mt-40 pt-20 border-t border-outline-variant/10">
+        <section className="mt-20 pt-10 md:mt-40 md:pt-20 border-t border-outline-variant/10">
           <h3 className="font-headline text-2xl font-bold mb-16" data-animate>{t('experience.stack.title')}</h3>
           <div className="space-y-10">
             {[
