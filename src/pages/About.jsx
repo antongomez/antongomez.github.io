@@ -47,7 +47,7 @@ export default function About() {
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl opacity-30 group-hover:opacity-60 transition-opacity duration-1000" />
               <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-surface-container shadow-2xl relative z-10 border border-outline-variant/20">
                 <img
-                  src={import.meta.env.BASE_URL + 'foto_citius_web.JPG'}
+                  src={import.meta.env.BASE_URL + 'foto_citius_web.webp'}
                   alt="Professional portrait"
                   className="w-full h-full object-cover transition-all duration-1000"
                 />
