@@ -113,9 +113,9 @@
       "university": "Universidade de Santiago de Compostela",
       "grade": "Nota Media: 9,28/10",
       "thesisLabel": "Traballo de Fin de Máster",
-      "thesisTitle": "Adaptación de StyleGAN para o Procesamento de Imaxes de Teledetección Multidimensionais",
-      "githubBtn": "Repositorio GitHub",
-      "pdfBtn": "PDF do TFM",
+      "thesisTitle": "Adaptación da StyleGAN para o Procesamento de Imaxes de Teledetección Multidimensionais",
+      "githubBtn": "GitHub",
+      "pdfBtn": "PDF",
       "coursesLabel": "Materias Relevantes",
       "courses": [
         "Aprendizaxe Profundo",
@@ -165,7 +165,8 @@
       ],
       "thesisLabel": "Traballo de Fin de Grao",
       "thesisTitle": "Adaptación Efectiva das GANs para Imaxes de Teledetección Multidimensionais",
-      "thesisBtn": "PDF do TFG"
+      "githubBtn": "GitHub",
+      "thesisBtn": "PDF"
     },
     "math": {
       "degree": "Grao en Matemáticas",
@@ -189,7 +190,7 @@
       ],
       "thesisLabel": "Traballo de Fin de Grao",
       "thesisTitle": "Métodos de Clasificación e Conxuntos de Clasificadores en Aprendizaxe Supervisado",
-      "thesisBtn": "PDF do TFG"
+      "thesisBtn": "PDF"
     },
     "awards": {
       "title": "Premios e Recoñecementos",
@@ -240,7 +241,7 @@
     "thesis": {
       "tag1": "Investigación",
       "tag2": "GANs",
-      "title": "TFM: Adaptación de StyleGAN3",
+      "title": "TFM: Adaptación da StyleGAN3",
       "desc": "Unha arquitectura StyleGAN3 unificada que sintetiza imaxes multiespectrais e clasifícaas simultaneamente, abordando a escaseza de datos e o desequilibrio de clases en teledetección.",
       "githubBtn": "GITHUB",
       "pdfBtn": "PDF"
@@ -255,7 +256,8 @@
     },
     "alvaro": {
       "title": "alvaroleonnutricion",
-      "desc": "Web profesional para un nutricionista, desenvolvida mentres aprendía React desde cero. Engadín soporte multilingüe con i18n e estruturei a interface con Bootstrap."
+      "desc": "Web profesional para un nutricionista, desenvolvida mentres aprendía React desde cero. Engadín soporte multilingüe con i18n e estruturei a interface con Bootstrap.",
+      "visitBtn": "Visitar"
     },
     "hackudc1": {
       "label": "HackUDC · 2023",

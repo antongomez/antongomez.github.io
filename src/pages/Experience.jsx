@@ -118,21 +118,21 @@ export default function Experience() {
                       </li>
                     </ul>
                   </div>
-                  <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <div className="flex flex-col gap-5 pt-2">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">PyTorch</span>
+                      <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">Computer Vision</span>
+                      <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">GANs</span>
+                    </div>
                     <a
                       href="https://github.com/antongomez/Conditional-StyleGAN3"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all font-label text-xs uppercase tracking-widest"
+                      className="self-start flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all font-label text-xs uppercase tracking-widest"
                     >
                       <span className="material-symbols-outlined text-sm">code</span>
                       {t('experience.citius.githubBtn')}
                     </a>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">PyTorch</span>
-                      <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">StyleGAN3</span>
-                      <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">Remote Sensing</span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -184,21 +184,21 @@ export default function Experience() {
                   <p className="text-on-surface-variant leading-relaxed max-w-3xl">
                     {t('experience.citmaga.desc')}
                   </p>
-                  <div className="flex flex-wrap items-center gap-4 pt-2">
-                    <a
-                      href="https://github.com/zachmayer/caretEnsemble"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all font-label text-xs uppercase tracking-widest"
-                    >
-                      <span className="material-symbols-outlined text-sm">code</span>
-                      {t('experience.citmaga.githubBtn')}
-                    </a>
+                  <div className="flex flex-col gap-5 pt-2">
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">R</span>
                       <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">Open Source</span>
                       <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">Statistics</span>
                     </div>
+                    <a
+                      href="https://github.com/zachmayer/caretEnsemble"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="self-start flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all font-label text-xs uppercase tracking-widest"
+                    >
+                      <span className="material-symbols-outlined text-sm">code</span>
+                      {t('experience.citmaga.githubBtn')}
+                    </a>
                   </div>
                 </div>
               </div>

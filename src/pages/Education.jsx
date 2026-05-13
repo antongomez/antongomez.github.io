@@ -239,6 +239,9 @@ export default function Education() {
                     </p>
                   </div>
                   <div className="flex gap-3 flex-wrap">
+                    <a href="https://github.com/antongomez/Conditional-StyleGAN2" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary border border-secondary/20 hover:bg-secondary hover:text-on-secondary transition-all duration-300 font-label text-xs uppercase tracking-tight">
+                      <span className="material-symbols-outlined text-sm">code</span> {t('education.cs.githubBtn')}
+                    </a>
                     <a href={import.meta.env.BASE_URL + "tfg_computer_engineering.pdf"} download className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary border border-secondary/20 hover:bg-secondary hover:text-on-secondary transition-all duration-300 font-label text-xs uppercase tracking-tight">
                       <span className="material-symbols-outlined text-sm">download</span> {t('education.cs.thesisBtn')}
                     </a>

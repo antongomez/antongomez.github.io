@@ -67,11 +67,7 @@ export default function Projects() {
           {/* Master's Thesis - Large Feature Card */}
           <div className="md:col-span-2 lg:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container border border-outline-variant/10 hover:border-primary/30 transition-all duration-500" data-animate-card>
             <div className="absolute inset-0 z-10" style={{ background: "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)" }} />
-            <img
-              src="https://placehold.co/900x400/031d4b/c0c1ff?text=StyleGAN3+Neural+Network"
-              alt="Master's thesis visualization"
-              className="w-full h-96 object-cover card-img"
-            />
+            <div className="w-full h-96 card-img" style={{ background: '#031d4b' }} />
             <div className="absolute top-0 left-0 p-8 z-20">
               <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase">
                 {t("projects.thesis.tag1")}
@@ -84,7 +80,7 @@ export default function Projects() {
               <div className="card-desc-wrap">
                 <p className="text-white/70 max-w-xl">{t("projects.thesis.desc")}</p>
               </div>
-              <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
+              <div className="flex flex-wrap gap-3 mt-3">
                 <a
                   href="https://github.com/antongomez/Conditional-StyleGAN3"
                   target="_blank"
@@ -134,20 +130,12 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.caret.desc")}</p>
                 </div>
-                <div className="flex items-center justify-between gap-3 mt-3 group-hover:mt-0">
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">
-                      {t("projects.caret.tag1")}
-                    </span>
-                    <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">
-                      {t("projects.caret.tag2")}
-                    </span>
-                  </div>
+                <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://github.com/zachmayer/caretEnsemble"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">code</span>
                     {t("projects.caret.viewBtn")}
@@ -184,20 +172,24 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.alvaro.desc")}</p>
                 </div>
-                <div className="flex items-center justify-between gap-3 mt-3 group-hover:mt-0">
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">React</span>
-                    <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">UI/UX</span>
-                    <span className="px-3 py-1 rounded-md bg-white/15 text-white/70 text-[10px] font-label uppercase tracking-wider">Deployment</span>
-                  </div>
+                <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://alvaroleonnutricion.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">open_in_new</span>
-                    Visit
+                    {t("projects.alvaro.visitBtn")}
+                  </a>
+                  <a
+                    href="https://github.com/antongomez/nutrition-clinic-web"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                  >
+                    <span className="material-symbols-outlined text-sm">open_in_new</span>
+                    GitHub
                   </a>
                 </div>
               </div>
@@ -219,7 +211,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc3.desc")}</p>
                 </div>
-                <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
+                <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://devpost.com/software/wearvana"
                     target="_blank"
@@ -270,7 +262,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackupc.desc")}</p>
                 </div>
-                <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
+                <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://devpost.com/software/opensplitbot"
                     target="_blank"
@@ -321,7 +313,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc2.desc")}</p>
                 </div>
-                <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
+                <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://devpost.com/software/ecoviaggio"
                     target="_blank"
@@ -372,7 +364,7 @@ export default function Projects() {
                 <div className="card-desc-wrap">
                   <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc1.desc")}</p>
                 </div>
-                <div className="flex flex-wrap gap-3 mt-3 group-hover:mt-0">
+                <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://devpost.com/software/costacompas"
                     target="_blank"

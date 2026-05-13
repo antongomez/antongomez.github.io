@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Claude's files
+GEMINI.md
 CLAUDE.md
 .claude/

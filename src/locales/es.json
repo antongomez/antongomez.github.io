@@ -113,9 +113,9 @@
       "university": "Universidad de Santiago de Compostela",
       "grade": "Nota Media: 9,28/10",
       "thesisLabel": "Trabajo de Fin de Máster",
-      "thesisTitle": "Adaptación de StyleGAN para el Procesamiento de Imágenes de Teledetección Multidimensionales",
-      "githubBtn": "Repositorio GitHub",
-      "pdfBtn": "PDF del TFM",
+      "thesisTitle": "Adaptación de la StyleGAN para el Procesamiento de Imágenes de Teledetección Multidimensionales",
+      "githubBtn": "GitHub",
+      "pdfBtn": "PDF",
       "coursesLabel": "Asignaturas Relevantes",
       "courses": [
         "Aprendizaje Profundo",
@@ -165,7 +165,8 @@
       ],
       "thesisLabel": "Trabajo de Fin de Grado",
       "thesisTitle": "Adaptación Efectiva de las GANs para Imágenes de Teledetección Multidimensionales",
-      "thesisBtn": "PDF del TFG"
+      "githubBtn": "GitHub",
+      "thesisBtn": "PDF"
     },
     "math": {
       "degree": "Grado en Matemáticas",
@@ -189,7 +190,7 @@
       ],
       "thesisLabel": "Trabajo de Fin de Grado",
       "thesisTitle": "Métodos de Clasificación y Conjuntos de Clasificadores en Aprendizaje Supervisado",
-      "thesisBtn": "PDF del TFG"
+      "thesisBtn": "PDF"
     },
     "awards": {
       "title": "Premios y Reconocimientos",
@@ -240,7 +241,7 @@
     "thesis": {
       "tag1": "Investigación",
       "tag2": "GANs",
-      "title": "TFM: Adaptación de StyleGAN3",
+      "title": "TFM: Adaptación de la StyleGAN3",
       "desc": "Una arquitectura StyleGAN3 unificada que sintetiza imágenes multiespectrales y las clasifica simultáneamente, abordando la escasez de datos y el desequilibrio de clases en teledetección.",
       "githubBtn": "GITHUB",
       "pdfBtn": "PDF"
@@ -255,7 +256,8 @@
     },
     "alvaro": {
       "title": "alvaroleonnutricion",
-      "desc": "Web profesional para un nutricionista, desarrollada mientras aprendía React desde cero. Añadí soporte multilingüe con i18n y estructuré la interfaz con Bootstrap."
+      "desc": "Web profesional para un nutricionista, desarrollada mientras aprendía React desde cero. Añadí soporte multilingüe con i18n y estructuré la interfaz con Bootstrap.",
+      "visitBtn": "Visitar"
     },
     "hackudc1": {
       "label": "HackUDC · 2023",

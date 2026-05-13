@@ -114,8 +114,8 @@
       "grade": "Avg Grade: 9.28/10",
       "thesisLabel": "Master's Thesis",
       "thesisTitle": "Adaptation of StyleGAN for Processing Multidimensional Remote Sensing Images",
-      "githubBtn": "GitHub Repo",
-      "pdfBtn": "Thesis PDF",
+      "githubBtn": "GitHub",
+      "pdfBtn": "PDF",
       "coursesLabel": "Relevant Courses",
       "courses": [
         "Deep Learning",
@@ -165,7 +165,8 @@
       ],
       "thesisLabel": "Bachelor's Thesis",
       "thesisTitle": "Effective Adaptation of GANs for Multidimensional Remote Sensing Images",
-      "thesisBtn": "Thesis PDF"
+      "githubBtn": "GitHub",
+      "thesisBtn": "PDF"
     },
     "math": {
       "degree": "Bachelor's Degree in Mathematics",
@@ -189,7 +190,7 @@
       ],
       "thesisLabel": "Bachelor's Thesis",
       "thesisTitle": "Classification Methods and Classifier Ensembles in Supervised Learning",
-      "thesisBtn": "Thesis PDF"
+      "thesisBtn": "PDF"
     },
     "awards": {
       "title": "Honors & Awards",
@@ -255,7 +256,8 @@
     },
     "alvaro": {
       "title": "alvaroleonnutricion",
-      "desc": "A nutritionist's professional site, built while learning React from scratch. Added multilingual support with i18n and structured the UI with Bootstrap."
+      "desc": "A nutritionist's professional site, built while learning React from scratch. Added multilingual support with i18n and structured the UI with Bootstrap.",
+      "visitBtn": "Visit"
     },
     "hackudc1": {
       "label": "HackUDC · 2023",
