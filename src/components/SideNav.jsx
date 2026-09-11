@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Antón Gómez López
+//
+// SPDX-License-Identifier: MIT
+
 export default function SideNav() {
   return (
     <aside className="fixed right-6 top-1/2 -translate-y-1/2 rounded-full py-6 px-2 w-14 bg-surface-container-low/80 backdrop-blur-lg border border-outline-variant/20 shadow-[0_0_20px_rgba(33,190,220,0.1)] flex-col items-center gap-8 z-40 hidden lg:flex">

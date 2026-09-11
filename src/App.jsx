@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Antón Gómez López
+//
+// SPDX-License-Identifier: MIT
+
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'

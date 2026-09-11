@@ -1,0 +1,10 @@
+Third-Party Assets
+
+The files annotated with this identifier are logos, trademarks, screenshots
+or other content owned by third parties (universities, research centres,
+companies, events or clients). They are included in this repository solely
+for identification and portfolio-illustration purposes.
+
+They are NOT covered by the MIT, CC BY 4.0 or CC BY-NC-ND 4.0 licences that
+apply to the rest of this repository. All rights are reserved by their
+respective owners, and any reuse requires their permission.

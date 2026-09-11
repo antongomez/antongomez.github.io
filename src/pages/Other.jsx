@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Antón Gómez López
+//
+// SPDX-License-Identifier: MIT
+
 import { useTranslation } from 'react-i18next'
 import Navbar from '../components/Navbar'
 import SideNav from '../components/SideNav'

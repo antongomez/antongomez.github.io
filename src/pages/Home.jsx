@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Antón Gómez López
+//
+// SPDX-License-Identifier: MIT
+
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'

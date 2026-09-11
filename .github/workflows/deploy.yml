@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Antón Gómez López
+#
+# SPDX-License-Identifier: MIT
+
 name: Deploy to GitHub Pages
 
 on:

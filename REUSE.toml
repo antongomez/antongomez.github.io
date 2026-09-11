@@ -1,0 +1,78 @@
+# SPDX-FileCopyrightText: 2026 Antón Gómez López
+# SPDX-License-Identifier: MIT
+#
+# REUSE licensing manifest (https://reuse.software/spec-3.3/).
+# Later annotations take precedence over earlier ones for the same file.
+
+version = 1
+SPDX-PackageName = "portfolio"
+SPDX-PackageSupplier = "Antón Gómez López"
+SPDX-PackageDownloadLocation = "https://github.com/antongomez/portfolio"
+
+# ---------------------------------------------------------------------------
+# Code and configuration that cannot carry an SPDX header (JSON, plain text,
+# lockfiles). Every other source file has its own header. -> MIT
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "package.json",
+  "package-lock.json",
+  "src/locales/*.json",
+  "public/robots.txt",
+  "public/sitemap.xml",
+  "README.md",
+]
+SPDX-FileCopyrightText = "2026 Antón Gómez López"
+SPDX-License-Identifier = "MIT"
+
+# ---------------------------------------------------------------------------
+# Own images: photos, screenshots of my projects, diagrams, favicon
+# -> CC BY 4.0
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "public/**/*.webp",
+  "public/**/*.jpg",
+  "public/**/*.png",
+  "public/favicon.svg",
+]
+SPDX-FileCopyrightText = "2026 Antón Gómez López"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# ---------------------------------------------------------------------------
+# Academic theses and CV -> CC BY-NC-ND 4.0
+# (may be shared verbatim with attribution; no derivatives, no commercial use)
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = ["public/*.pdf"]
+SPDX-FileCopyrightText = "2026 Antón Gómez López"
+SPDX-License-Identifier = "CC-BY-NC-ND-4.0"
+
+# ---------------------------------------------------------------------------
+# Third-party logos, trademarks and content. Not mine to license; included
+# for identification purposes only. See LICENSES/LicenseRef-Third-Party-Assets.txt
+# ---------------------------------------------------------------------------
+[[annotations]]
+path = ["public/usc.webp"]
+SPDX-FileCopyrightText = "Universidade de Santiago de Compostela"
+SPDX-License-Identifier = "LicenseRef-Third-Party-Assets"
+
+[[annotations]]
+path = ["public/positivo_logotipo_citius.png", "public/citcolor.png"]
+SPDX-FileCopyrightText = "CiTIUS - Universidade de Santiago de Compostela"
+SPDX-License-Identifier = "LicenseRef-Third-Party-Assets"
+
+[[annotations]]
+path = ["public/Logotipo-Gradiant_V3.png"]
+SPDX-FileCopyrightText = "Gradiant"
+SPDX-License-Identifier = "LicenseRef-Third-Party-Assets"
+
+[[annotations]]
+path = ["public/theker_logo.webp"]
+SPDX-FileCopyrightText = "THEKER Robotics"
+SPDX-License-Identifier = "LicenseRef-Third-Party-Assets"
+
+[[annotations]]
+path = ["public/home_alvaroleonnutricion.webp"]
+SPDX-FileCopyrightText = "Álvaro León Nutrición"
+SPDX-License-Identifier = "LicenseRef-Third-Party-Assets"
