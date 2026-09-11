@@ -14,7 +14,7 @@
   },
   "home": {
     "subtitle": "Enxeñeiro de IA · Enxeñeiro de Software · Matemático",
-    "bio": "Máster en Intelixencia Artificial · Investigador no CiTIUS. Dobre titulación en Enxeñaría Informática e Matemáticas, con experiencia investigadora en visión artificial e IA xerativa — e unha sólida base en PLN, enxeñaría de software e ciencia aplicada.",
+    "bio": "Enxeñeiro de Deep Learning que constrúe sistemas de percepción e aprendizaxe para robots que se adaptan ao mundo real — IA que ve, decide e actúa. Máster en Intelixencia Artificial e dobre titulación en Enxeñaría Informática e Matemáticas, con experiencia investigadora en visión artificial e IA xerativa.",
     "aboutBtn": "Sobre min",
     "projectsBtn": "Ver Proxectos"
   },
@@ -63,6 +63,12 @@
     "title2": "Técnica.",
     "subtitle": "Da investigación en PLN á IA xerativa para teledetección — unha progresión a través do aprendizaxe profundo aplicado e a contribución ao código aberto.",
     "completed": "Completado",
+    "theker": {
+      "dates": "Xul 2026 – Actualidade",
+      "role": "Deep Learning Engineer",
+      "org": "THEKER Robotics",
+      "desc": "Desenvolvo o software que hai detrás de robots industriais nativos de IA, capaces de adaptarse en tempo real a obxectos heteroxéneos e condicións cambiantes en loxística e fabricación. O meu traballo está na intersección entre visión artificial e robótica: construír e adestrar modelos de deep learning para percepción, integralos no stack do robot con ROS 2 e facer que funcionen de xeito fiable en contornos reais de produción, non en demos controladas."
+    },
     "citius": {
       "dates": "Feb 2025 – Feb 2026",
       "role": "Investigador en IA",

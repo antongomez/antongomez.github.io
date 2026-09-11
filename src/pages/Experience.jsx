@@ -64,6 +64,64 @@ export default function Experience() {
 
         <section className="space-y-16 md:space-y-32">
 
+          {/* THEKER — Deep Learning Engineer (current) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative" data-animate-card>
+            <div className="hidden lg:block lg:col-span-2 py-4">
+              <div className="sticky top-40 flex flex-col items-end">
+                {(() => {
+                  const [start, end] = t('experience.theker.dates').split(' – ')
+                  const [sm, sy] = start.split(' ')
+                  const [em, ey] = (end || start).split(' ')
+                  const isCurrent = !ey
+                  return (
+                    <>
+                      <div className="text-right">
+                        <span className="font-label text-[10px] uppercase tracking-[0.2em] text-secondary/70 block mb-0.5">{sm}</span>
+                        <span className="font-headline text-4xl font-bold text-on-surface-variant leading-none">{sy}</span>
+                      </div>
+                      <div className="flex flex-col items-center gap-1 my-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary/50" />
+                        <div className="w-px h-10 bg-gradient-to-b from-secondary/30 to-outline-variant/20" />
+                        <div className={`w-1.5 h-1.5 rounded-full ${isCurrent ? 'bg-secondary animate-pulse' : 'bg-outline-variant/40'}`} />
+                      </div>
+                      <div className="text-right mb-4">
+                        <span className="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/75 block mb-0.5">{em}</span>
+                        <span className="font-headline text-4xl font-bold text-on-surface-variant/75 leading-none">{isCurrent ? new Date().getFullYear() : ey}</span>
+                      </div>
+                    </>
+                  )
+                })()}
+              </div>
+            </div>
+            <div className="lg:col-span-10">
+              <div className="glass-card rounded-xl p-8 md:p-12 border border-outline-variant/20 relative overflow-hidden group">
+                <div className="absolute -top-24 -right-24 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-secondary/20 transition-all duration-700" />
+                <div className="relative z-10 space-y-6">
+                  <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
+                    <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center bg-inverse-surface dark:bg-surface-container-lowest/80 border border-outline-variant/20 rounded-lg px-3 self-center md:self-auto">
+                      <img src={import.meta.env.BASE_URL + 'theker_logo.webp'} alt="THEKER Robotics" className="max-h-8 w-full object-contain" />
+                    </div>
+                    <div>
+                      <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.theker.role')}</h2>
+                      <p className="font-body text-primary font-medium">{t('experience.theker.org')}</p>
+                      <p className="font-label text-xs text-on-surface-variant/60 mt-1">{t('experience.theker.dates')}</p>
+                    </div>
+                  </div>
+                  {t('experience.theker.desc') && (
+                    <p className="text-on-surface-variant leading-relaxed text-lg max-w-3xl">
+                      {t('experience.theker.desc')}
+                    </p>
+                  )}
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">Python</span>
+                    <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">ROS 2</span>
+                    <span className="px-3 py-1 rounded-md bg-surface-variant text-on-surface-variant text-[10px] font-label uppercase tracking-wider">Computer Vision</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* CiTIUS — AI Research Scholar */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative" data-animate-card>
             <div className="hidden lg:block lg:col-span-2 py-4">
@@ -368,6 +426,7 @@ export default function Experience() {
                   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
                   { name: 'FastAPI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg' },
                   { name: 'Flask', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg', whiteBg: true },
+                  { name: 'ROS 2', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ros/ros-original.svg', whiteBg: true },
                 ],
               },
               {

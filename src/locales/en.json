@@ -14,7 +14,7 @@
   },
   "home": {
     "subtitle": "AI Engineer · Software Engineer · Mathematician",
-    "bio": "MSc in Artificial Intelligence · Researcher at CiTIUS. Dual degree in Computer Engineering & Mathematics, with research experience in computer vision and generative AI — and a solid foundation in NLP, software engineering, and applied science.",
+    "bio": "Deep Learning Engineer building perception and learning systems for robots that adapt to the real world — AI that sees, decides and acts. MSc in Artificial Intelligence and dual degree in Computer Engineering & Mathematics, with research background in computer vision and generative AI.",
     "aboutBtn": "About Me",
     "projectsBtn": "View Projects"
   },
@@ -63,6 +63,12 @@
     "title2": "Trajectory.",
     "subtitle": "From NLP research to generative AI for remote sensing — a progression through applied deep learning and open-source contribution.",
     "completed": "Completed",
+    "theker": {
+      "dates": "Jul 2026 – Present",
+      "role": "Deep Learning Engineer",
+      "org": "THEKER Robotics",
+      "desc": "I develop the software behind AI-native industrial robots that adapt in real time to heterogeneous objects and changing conditions in logistics and manufacturing. My work sits at the intersection of computer vision and robotics: building and training deep learning models for perception, integrating them into the robot stack with ROS 2, and making them run reliably in real production environments rather than controlled demos."
+    },
     "citius": {
       "dates": "Feb 2025 – Feb 2026",
       "role": "AI Research Scholar",
