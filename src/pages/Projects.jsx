@@ -65,27 +65,36 @@ export default function Projects() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
           {/* Master's Thesis - Large Feature Card */}
+          {/* Mobile: image on top at natural ratio, text below. md+: image fills the card, text overlays a scrim. */}
           <div className="md:col-span-2 lg:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container border border-outline-variant/10 hover:border-primary/30 transition-all duration-500" data-animate-card>
-            <div className="absolute inset-0 z-10" style={{ background: "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)" }} />
-            <div className="w-full h-96 card-img" style={{ background: '#031d4b' }} />
-            <div className="absolute top-0 left-0 p-8 z-20">
+            <div className="relative md:h-96">
+              <img
+                src={import.meta.env.BASE_URL + 'architecture@1200.webp'}
+                srcSet={`${import.meta.env.BASE_URL}architecture@1200.webp 1200w, ${import.meta.env.BASE_URL}architecture.webp 2400w`}
+                sizes="(min-width: 1024px) 830px, 100vw"
+                alt="Conditional StyleGAN3 architecture diagram"
+                className="w-full aspect-[2400/909] object-contain md:aspect-auto md:h-96 md:object-cover card-img"
+              />
+              <div className="hidden md:block absolute inset-0 z-10" style={{ background: "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)" }} />
+            </div>
+            <div className="absolute top-0 left-0 p-4 md:p-8 z-20">
               <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase">
                 {t("projects.thesis.tag1")}
               </span>
             </div>
-            <div className="absolute bottom-0 left-0 p-8 z-20 w-full">
-              <h3 className="text-3xl font-headline font-bold text-white mb-3 card-title">
+            <div className="p-6 border-t border-outline-variant/20 md:border-0 md:absolute md:bottom-0 md:left-0 md:p-8 z-20 w-full">
+              <h3 className="text-2xl md:text-3xl font-headline font-bold text-on-surface md:text-white mb-3 card-title">
                 {t("projects.thesis.title")}
               </h3>
               <div className="card-desc-wrap">
-                <p className="text-white/70 max-w-xl">{t("projects.thesis.desc")}</p>
+                <p className="text-on-surface-variant md:text-white/70 max-w-xl">{t("projects.thesis.desc")}</p>
               </div>
               <div className="flex flex-wrap gap-3 mt-3">
                 <a
                   href="https://github.com/antongomez/Conditional-StyleGAN3"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                 >
                   <span className="material-symbols-outlined text-sm">code</span>{" "}
                   {t("projects.thesis.githubBtn")}
@@ -94,7 +103,7 @@ export default function Projects() {
                   href={import.meta.env.BASE_URL + "tfm.pdf"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                 >
                   <span className="material-symbols-outlined text-sm">article</span>{" "}
                   {t("projects.thesis.pdfBtn")}
@@ -104,38 +113,38 @@ export default function Projects() {
           </div>
 
           {/* caretEnsemble */}
-          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[24rem]" data-animate-card>
-            <div className="absolute inset-0">
+          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 bg-surface-container md:min-h-[24rem]" data-animate-card>
+            <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'code_snippet_careEnsemble.webp'}
                 alt="caretEnsemble code snippet"
                 className="w-full h-full object-cover card-img"
               />
               <div
-                className="absolute inset-0"
+                className="hidden md:block absolute inset-0"
                 style={{
                   background:
                     "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)",
                 }}
               />
             </div>
-            <div className="relative z-10 p-8 flex flex-col justify-between h-full">
-              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-white/30 text-white rounded uppercase self-start">
+            <div className="p-6 border-t border-outline-variant/20 md:border-0 md:relative md:z-10 md:p-8 flex flex-col justify-between md:h-full">
+              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-white/30 text-white rounded uppercase self-start absolute top-4 left-4 md:static">
                 {t("projects.caret.tag")}
               </span>
               <div>
-                <h3 className="text-2xl font-headline font-bold text-white mb-3 card-title">
+                <h3 className="text-2xl font-headline font-bold text-on-surface md:text-white mb-3 card-title">
                   {t("projects.caret.title")}
                 </h3>
                 <div className="card-desc-wrap">
-                  <p className="text-white/70 text-sm leading-relaxed">{t("projects.caret.desc")}</p>
+                  <p className="text-on-surface-variant md:text-white/70 text-sm leading-relaxed">{t("projects.caret.desc")}</p>
                 </div>
                 <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://github.com/zachmayer/caretEnsemble"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">code</span>
                     {t("projects.caret.viewBtn")}
@@ -146,38 +155,38 @@ export default function Projects() {
           </div>
 
           {/* alvaroleonnutricion */}
-          <div className="md:col-span-1 lg:col-span-5 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate-card>
-            <div className="absolute inset-0">
+          <div className="md:col-span-1 lg:col-span-5 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 bg-surface-container md:min-h-[22rem]" data-animate-card>
+            <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'home_alvaroleonnutricion.webp'}
                 alt="alvaroleonnutricion website"
                 className="w-full h-full object-cover card-img"
               />
               <div
-                className="absolute inset-0"
+                className="hidden md:block absolute inset-0"
                 style={{
                   background:
                     "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)",
                 }}
               />
             </div>
-            <div className="relative z-10 p-8 flex flex-col justify-between h-full">
-              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start">
+            <div className="p-6 border-t border-outline-variant/20 md:border-0 md:relative md:z-10 md:p-8 flex flex-col justify-between md:h-full">
+              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start absolute top-4 left-4 md:static">
                 Web
               </span>
               <div>
-                <h3 className="text-2xl font-headline font-bold text-white mb-3 card-title">
+                <h3 className="text-2xl font-headline font-bold text-on-surface md:text-white mb-3 card-title">
                   {t("projects.alvaro.title")}
                 </h3>
                 <div className="card-desc-wrap">
-                  <p className="text-white/70 text-sm leading-relaxed">{t("projects.alvaro.desc")}</p>
+                  <p className="text-on-surface-variant md:text-white/70 text-sm leading-relaxed">{t("projects.alvaro.desc")}</p>
                 </div>
                 <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://alvaroleonnutricion.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">open_in_new</span>
                     {t("projects.alvaro.visitBtn")}
@@ -186,7 +195,7 @@ export default function Projects() {
                     href="https://github.com/antongomez/nutrition-clinic-web"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">open_in_new</span>
                     GitHub
@@ -197,26 +206,26 @@ export default function Projects() {
           </div>
 
           {/* Wearvana */}
-          <div className="md:col-span-1 lg:col-span-7 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate-card>
-            <div className="absolute inset-0">
+          <div className="md:col-span-1 lg:col-span-7 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 bg-surface-container md:min-h-[22rem]" data-animate-card>
+            <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img src={import.meta.env.BASE_URL + 'wearvana_combined.webp'} alt="Wearvana" className="w-full h-full object-cover object-top card-img" />
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)' }} />
+              <div className="hidden md:block absolute inset-0" style={{ background: 'linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)' }} />
             </div>
-            <div className="relative z-10 p-8 flex flex-col justify-between h-full">
-              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start">{t("projects.hackudc3.label")}</span>
+            <div className="p-6 border-t border-outline-variant/20 md:border-0 md:relative md:z-10 md:p-8 flex flex-col justify-between md:h-full">
+              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start absolute top-4 left-4 md:static">{t("projects.hackudc3.label")}</span>
               <div>
-                <h3 className="text-2xl font-headline font-bold text-white mb-3 card-title">
+                <h3 className="text-2xl font-headline font-bold text-on-surface md:text-white mb-3 card-title">
                   {t("projects.hackudc3.title")}
                 </h3>
                 <div className="card-desc-wrap">
-                  <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc3.desc")}</p>
+                  <p className="text-on-surface-variant md:text-white/70 text-sm leading-relaxed">{t("projects.hackudc3.desc")}</p>
                 </div>
                 <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://devpost.com/software/wearvana"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">open_in_new</span>
                     {t("projects.hackudc3.devpostBtn")}
@@ -225,7 +234,7 @@ export default function Projects() {
                     href="https://github.com/DaniPVargas/Wearvana/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">code</span>
                     {t("projects.hackudc3.githubBtn")}
@@ -236,38 +245,38 @@ export default function Projects() {
           </div>
 
           {/* OpenSplit */}
-          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '0ms' }}>
-            <div className="absolute inset-0">
+          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 bg-surface-container md:min-h-[22rem]" data-animate style={{ transitionDelay: '0ms' }}>
+            <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'opensplit.webp'}
                 alt="OpenSplit"
                 className="w-full h-full object-cover card-img"
               />
               <div
-                className="absolute inset-0"
+                className="hidden md:block absolute inset-0"
                 style={{
                   background:
                     "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)",
                 }}
               />
             </div>
-            <div className="relative z-10 p-8 flex flex-col justify-between h-full">
-              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start">
+            <div className="p-6 border-t border-outline-variant/20 md:border-0 md:relative md:z-10 md:p-8 flex flex-col justify-between md:h-full">
+              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start absolute top-4 left-4 md:static">
                 {t("projects.hackupc.label")}
               </span>
               <div>
-                <h3 className="text-2xl font-headline font-bold text-white mb-3 card-title">
+                <h3 className="text-2xl font-headline font-bold text-on-surface md:text-white mb-3 card-title">
                   {t("projects.hackupc.title")}
                 </h3>
                 <div className="card-desc-wrap">
-                  <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackupc.desc")}</p>
+                  <p className="text-on-surface-variant md:text-white/70 text-sm leading-relaxed">{t("projects.hackupc.desc")}</p>
                 </div>
                 <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://devpost.com/software/opensplitbot"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">open_in_new</span>
                     {t("projects.hackupc.devpostBtn")}
@@ -276,7 +285,7 @@ export default function Projects() {
                     href="https://github.com/DaniPVargas/OpenSplitBot"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">code</span>
                     {t("projects.hackupc.githubBtn")}
@@ -287,38 +296,38 @@ export default function Projects() {
           </div>
 
           {/* Ecoviaggio */}
-          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '60ms' }}>
-            <div className="absolute inset-0">
+          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 bg-surface-container md:min-h-[22rem]" data-animate style={{ transitionDelay: '60ms' }}>
+            <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'ecoviaggio.webp'}
                 alt="Ecoviaggio"
                 className="w-full h-full object-cover card-img"
               />
               <div
-                className="absolute inset-0"
+                className="hidden md:block absolute inset-0"
                 style={{
                   background:
                     "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)",
                 }}
               />
             </div>
-            <div className="relative z-10 p-8 flex flex-col justify-between h-full">
-              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start">
+            <div className="p-6 border-t border-outline-variant/20 md:border-0 md:relative md:z-10 md:p-8 flex flex-col justify-between md:h-full">
+              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start absolute top-4 left-4 md:static">
                 {t("projects.hackudc2.label")}
               </span>
               <div>
-                <h3 className="text-2xl font-headline font-bold text-white mb-3 card-title">
+                <h3 className="text-2xl font-headline font-bold text-on-surface md:text-white mb-3 card-title">
                   {t("projects.hackudc2.title")}
                 </h3>
                 <div className="card-desc-wrap">
-                  <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc2.desc")}</p>
+                  <p className="text-on-surface-variant md:text-white/70 text-sm leading-relaxed">{t("projects.hackudc2.desc")}</p>
                 </div>
                 <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://devpost.com/software/ecoviaggio"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">open_in_new</span>
                     {t("projects.hackudc2.devpostBtn")}
@@ -327,7 +336,7 @@ export default function Projects() {
                     href="https://github.com/antongomez/ecoviaggio"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">code</span>
                     {t("projects.hackudc2.githubBtn")}
@@ -338,38 +347,38 @@ export default function Projects() {
           </div>
 
           {/* Costa Compas */}
-          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 min-h-[22rem]" data-animate style={{ transitionDelay: '120ms' }}>
-            <div className="absolute inset-0">
+          <div className="md:col-span-1 lg:col-span-4 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 bg-surface-container md:min-h-[22rem]" data-animate style={{ transitionDelay: '120ms' }}>
+            <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'costacompas.webp'}
                 alt="Costa Compas"
                 className="w-full h-full object-cover card-img"
               />
               <div
-                className="absolute inset-0"
+                className="hidden md:block absolute inset-0"
                 style={{
                   background:
                     "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)",
                 }}
               />
             </div>
-            <div className="relative z-10 p-8 flex flex-col justify-between h-full">
-              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start">
+            <div className="p-6 border-t border-outline-variant/20 md:border-0 md:relative md:z-10 md:p-8 flex flex-col justify-between md:h-full">
+              <span className="px-2 py-1 text-[10px] font-label font-bold tracking-widest bg-black/45 text-white/90 rounded uppercase self-start absolute top-4 left-4 md:static">
                 {t("projects.hackudc1.label")}
               </span>
               <div>
-                <h3 className="text-2xl font-headline font-bold text-white mb-3 card-title">
+                <h3 className="text-2xl font-headline font-bold text-on-surface md:text-white mb-3 card-title">
                   {t("projects.hackudc1.title")}
                 </h3>
                 <div className="card-desc-wrap">
-                  <p className="text-white/70 text-sm leading-relaxed">{t("projects.hackudc1.desc")}</p>
+                  <p className="text-on-surface-variant md:text-white/70 text-sm leading-relaxed">{t("projects.hackudc1.desc")}</p>
                 </div>
                 <div className="flex flex-wrap gap-3 mt-3">
                   <a
                     href="https://devpost.com/software/costacompas"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">open_in_new</span>
                     {t("projects.hackudc1.devpostBtn")}
@@ -378,7 +387,7 @@ export default function Projects() {
                     href="https://github.com/CastilloDel/costaCompas"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white/70 hover:border-white/40 hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary md:border-white/25 md:text-white/70 md:hover:border-white/40 md:hover:text-white transition-all duration-300 font-label text-xs uppercase tracking-widest"
                   >
                     <span className="material-symbols-outlined text-sm">code</span>
                     {t("projects.hackudc1.githubBtn")}
