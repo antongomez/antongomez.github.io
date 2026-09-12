@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://antongomez.github.io/portfolio/sitemap.xml
+Sitemap: https://antongomez.github.io/sitemap.xml

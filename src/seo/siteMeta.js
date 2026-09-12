@@ -6,7 +6,7 @@
 // Consumed at build time by scripts/prerender.js (static HTML + sitemap)
 // and at runtime by src/seo/Seo.jsx (client-side navigation).
 
-export const SITE_URL = 'https://antongomez.github.io/portfolio'
+export const SITE_URL = 'https://antongomez.github.io'
 export const SITE_NAME = 'Antón Gómez López'
 export const OG_IMAGE = `${SITE_URL}/hero-portrait.webp`
 export const OG_IMAGE_WIDTH = '1797'

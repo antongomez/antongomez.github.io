@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal site, live at [antongomez.github.io/portfolio](https://antongomez.github.io/portfolio/).
+Personal site, live at [antongomez.github.io](https://antongomez.github.io/).
 React 19 · Vite 8 · Tailwind CSS v4 · i18next (EN / ES / GL). Deployed to GitHub Pages on every push to `main`.
 
 Feel free to fork it and use it as a template for your own site — just swap the content in `src/pages/` and `src/locales/`, and replace the assets in `public/`.
