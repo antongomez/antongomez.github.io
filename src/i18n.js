@@ -21,4 +21,11 @@ i18n
     interpolation: { escapeValue: false },
   })
 
+// Keep <html lang> in sync so crawlers and screen readers see the real language
+const syncHtmlLang = (lng) => {
+  document.documentElement.setAttribute('lang', lng)
+}
+syncHtmlLang(i18n.language)
+i18n.on('languageChanged', syncHtmlLang)
+
 export default i18n
