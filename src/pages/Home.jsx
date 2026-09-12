@@ -126,13 +126,14 @@ export default function Home() {
               >
                 <img
                   src={HERO_LQIP}
+                  alt=""
                   aria-hidden="true"
                   className="absolute inset-0 w-full h-full object-cover scale-110 blur-xl"
                   style={{ opacity: heroLoaded ? 0 : 1, transition: 'opacity 600ms ease' }}
                 />
                 <img
                   src={import.meta.env.BASE_URL + 'hero-portrait.webp'}
-                  alt="Professional Profile"
+                  alt="Antón Gómez López"
                   className="relative w-full h-full object-cover transition-all duration-700"
                   style={{ opacity: heroLoaded ? 1 : 0, transition: 'opacity 600ms ease' }}
                   onLoad={() => setHeroLoaded(true)}

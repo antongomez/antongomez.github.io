@@ -88,7 +88,7 @@ export default function Education() {
               <div className="lg:col-span-7 space-y-8">
                 <div className="flex items-center gap-6">
                   <div className="h-16 w-24 rounded-xl dark:bg-white/90 flex items-center justify-center dark:border dark:border-outline-variant/20 dark:shadow-lg shrink-0 p-2">
-                    <img src={import.meta.env.BASE_URL + 'usc.webp'} alt="USC" className="w-full h-full object-contain" />
+                    <img src={import.meta.env.BASE_URL + 'usc.webp'} alt="Universidade de Santiago de Compostela logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <h3 className="font-headline text-2xl font-semibold text-on-background">{t('education.master.degree')}</h3>
@@ -178,7 +178,7 @@ export default function Education() {
               <div className="lg:col-span-7 space-y-8">
                 <div className="flex items-center gap-6">
                   <div className="h-16 w-24 rounded-xl dark:bg-white/90 flex items-center justify-center dark:border dark:border-outline-variant/20 dark:shadow-lg shrink-0 p-2">
-                    <img src={import.meta.env.BASE_URL + 'usc.webp'} alt="USC" className="w-full h-full object-contain" />
+                    <img src={import.meta.env.BASE_URL + 'usc.webp'} alt="Universidade de Santiago de Compostela logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <h3 className="font-headline text-2xl font-semibold text-on-background">{t('education.cs.degree')}</h3>
@@ -261,7 +261,7 @@ export default function Education() {
               <div className="lg:col-span-7 space-y-8">
                 <div className="flex items-center gap-6">
                   <div className="h-16 w-24 rounded-xl dark:bg-white/90 flex items-center justify-center dark:border dark:border-outline-variant/20 dark:shadow-lg shrink-0 p-2">
-                    <img src={import.meta.env.BASE_URL + 'usc.webp'} alt="USC" className="w-full h-full object-contain" />
+                    <img src={import.meta.env.BASE_URL + 'usc.webp'} alt="Universidade de Santiago de Compostela logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <h3 className="font-headline text-2xl font-semibold text-on-background">{t('education.math.degree')}</h3>

@@ -103,7 +103,7 @@ export default function Experience() {
                 <div className="relative z-10 space-y-6">
                   <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
                     <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center bg-inverse-surface dark:bg-surface-container-lowest/80 border border-outline-variant/20 rounded-lg px-3 self-center md:self-auto">
-                      <img src={import.meta.env.BASE_URL + 'theker_logo.webp'} alt="THEKER Robotics" className="max-h-8 w-full object-contain" />
+                      <img src={import.meta.env.BASE_URL + 'theker_logo.webp'} alt="THEKER Robotics logo" className="max-h-8 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.theker.role')}</h2>
@@ -160,7 +160,7 @@ export default function Experience() {
                 <div className="relative z-10 space-y-6">
                   <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
                     <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center dark:bg-white/90 rounded-lg px-3 self-center md:self-auto">
-                      <img src={import.meta.env.BASE_URL + 'positivo_logotipo_citius.png'} alt="CiTIUS" className="max-h-11 w-full object-contain" />
+                      <img src={import.meta.env.BASE_URL + 'positivo_logotipo_citius.png'} alt="CiTIUS logo" className="max-h-11 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.citius.role')}</h2>
@@ -235,7 +235,7 @@ export default function Experience() {
                 <div className="relative z-10 space-y-6">
                   <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
                     <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center dark:bg-white/90 rounded-lg px-3 self-center md:self-auto">
-                      <img src={import.meta.env.BASE_URL + 'citcolor.png'} alt="CITMAGA" className="max-h-11 w-full object-contain" />
+                      <img src={import.meta.env.BASE_URL + 'citcolor.png'} alt="CITMAGA logo" className="max-h-11 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.citmaga.role')}</h2>
@@ -301,7 +301,7 @@ export default function Experience() {
                 <div className="relative z-10 space-y-6">
                   <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
                     <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center dark:bg-white/90 rounded-lg px-3 self-center md:self-auto">
-                      <img src={import.meta.env.BASE_URL + 'Logotipo-Gradiant_V3.png'} alt="Gradiant" className="max-h-11 w-full object-contain" />
+                      <img src={import.meta.env.BASE_URL + 'Logotipo-Gradiant_V3.png'} alt="Gradiant logo" className="max-h-11 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.gradiant.role')}</h2>
@@ -369,7 +369,7 @@ export default function Experience() {
                 <div className="relative z-10 space-y-6">
                   <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
                     <div className="h-12 w-24 md:h-14 md:w-28 shrink-0 flex items-center justify-center dark:bg-white/90 rounded-lg px-3 self-center md:self-auto">
-                      <img src={import.meta.env.BASE_URL + 'positivo_logotipo_citius.png'} alt="CiTIUS" className="max-h-11 w-full object-contain" />
+                      <img src={import.meta.env.BASE_URL + 'positivo_logotipo_citius.png'} alt="CiTIUS logo" className="max-h-11 w-full object-contain" />
                     </div>
                     <div>
                       <h2 className="font-headline text-2xl md:text-3xl font-bold text-on-background">{t('experience.citiusNLP.role')}</h2>

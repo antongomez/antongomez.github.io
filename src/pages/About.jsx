@@ -52,7 +52,7 @@ export default function About() {
               <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-surface-container shadow-2xl relative z-10 border border-outline-variant/20">
                 <img
                   src={import.meta.env.BASE_URL + 'foto_citius_web.webp'}
-                  alt="Professional portrait"
+                  alt="Antón Gómez López"
                   className="w-full h-full object-cover transition-all duration-1000"
                 />
               </div>

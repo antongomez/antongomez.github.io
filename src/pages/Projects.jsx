@@ -76,7 +76,7 @@ export default function Projects() {
                 src={import.meta.env.BASE_URL + 'architecture@1200.webp'}
                 srcSet={`${import.meta.env.BASE_URL}architecture@1200.webp 1200w, ${import.meta.env.BASE_URL}architecture.webp 2400w`}
                 sizes="(min-width: 1024px) 830px, 100vw"
-                alt="Conditional StyleGAN3 architecture diagram"
+                alt="Architecture diagram of the Conditional StyleGAN3 model for multispectral image synthesis"
                 className="w-full aspect-[2400/909] object-contain md:aspect-auto md:h-96 md:object-cover card-img"
               />
               <div className="hidden md:block absolute inset-0 z-10" style={{ background: "linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)" }} />
@@ -121,7 +121,7 @@ export default function Projects() {
             <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'code_snippet_careEnsemble.webp'}
-                alt="caretEnsemble code snippet"
+                alt="Code snippet from the caretEnsemble R package"
                 className="w-full h-full object-cover card-img"
               />
               <div
@@ -163,7 +163,7 @@ export default function Projects() {
             <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'home_alvaroleonnutricion.webp'}
-                alt="alvaroleonnutricion website"
+                alt="Home page of the alvaroleonnutricion nutrition website"
                 className="w-full h-full object-cover card-img"
               />
               <div
@@ -212,7 +212,7 @@ export default function Projects() {
           {/* Wearvana */}
           <div className="md:col-span-1 lg:col-span-7 group relative overflow-hidden rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 bg-surface-container md:min-h-[22rem]" data-animate-card>
             <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
-              <img src={import.meta.env.BASE_URL + 'wearvana_combined.webp'} alt="Wearvana" className="w-full h-full object-cover object-top card-img" />
+              <img src={import.meta.env.BASE_URL + 'wearvana_combined.webp'} alt="Screens from Wearvana, a fashion-focused social network" className="w-full h-full object-cover object-top card-img" />
               <div className="hidden md:block absolute inset-0" style={{ background: 'linear-gradient(to top, var(--p-card-scrim) 0%, var(--p-card-scrim-mid) 50%, transparent 85%)' }} />
             </div>
             <div className="p-6 border-t border-outline-variant/20 md:border-0 md:relative md:z-10 md:p-8 flex flex-col justify-between md:h-full">
@@ -253,7 +253,7 @@ export default function Projects() {
             <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'opensplit.webp'}
-                alt="OpenSplit"
+                alt="OpenSplit, a Telegram bot for splitting group expenses"
                 className="w-full h-full object-cover card-img"
               />
               <div
@@ -304,7 +304,7 @@ export default function Projects() {
             <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'ecoviaggio.webp'}
-                alt="Ecoviaggio"
+                alt="Ecoviaggio, a web app for reducing the carbon footprint of travel"
                 className="w-full h-full object-cover card-img"
               />
               <div
@@ -355,7 +355,7 @@ export default function Projects() {
             <div className="relative aspect-video md:aspect-auto md:absolute md:inset-0">
               <img
                 src={import.meta.env.BASE_URL + 'costacompas.webp'}
-                alt="Costa Compas"
+                alt="Costa Compas, a beach recommendation app"
                 className="w-full h-full object-cover card-img"
               />
               <div
